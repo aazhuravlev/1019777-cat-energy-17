@@ -1,4 +1,9 @@
+.selection {
+  margin-bottom: 30px;
+}
+
 .selection__area {
+  margin: 0;
   padding: 0;
 
   border: none;
@@ -12,6 +17,10 @@
   .oswald;
 }
 
+.selection__value {
+  padding: 10px 15px;
+}
+
 .selection__value::placeholder {
   text-transform: uppercase;
 
@@ -21,7 +30,17 @@
 }
 
 .selection__required {
+  margin: 0;
+
+  text-align: center;
+
   color: #444444;
 
   .arial(14px; 16px);
+}
+
+.selection__button {
+  margin-bottom: 20px;
+
+  border: none;
 }
