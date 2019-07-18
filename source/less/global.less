@@ -4,9 +4,10 @@ body {
   margin: 0 auto;
   padding: 0;
 
+  color: #111111;
+
   font-family: "Oswald", Arial, sans-serif;
   font-weight: 400;
-  color: #111111;
 }
 
 .visually-hidden:not(:focus):not(:active),
@@ -31,39 +32,49 @@ input[type="radio"].visually-hidden {
 
 .section-title {
   margin: 0;
-  .oswald(36px; 60px);
+
   font-weight: 400;
+
+  .oswald(36px; 60px);
 }
 
 .field-title {
   margin: 0;
-  .oswald(24px; 24px);
+
   font-weight: 400;
+
+  .oswald(24px; 24px);
 }
 
 .page-desc {
-  .oswald(14px; 18px);
-  color: #111111;
-  text-transform: uppercase;
   margin: 0;
+
+  text-transform: uppercase;
+
+  color: #111111;
+
+  .oswald(14px; 18px);
 }
 
 .page-main__desc {
-  .arial;
   margin: 0;
+
   color: #444444;
+
+  .arial;
 }
 
 .button {
-  .link;
   color: #ffffff;
   background-color: #68b738;
+
+  .link;
   &:hover,
   &:focus {
     background-color: #5eaa2f;
   }
   &:active{
-    background-color: #5eaa2f;
     color: rgba(255, 255, 255, 0.3);
+    background-color: #5eaa2f;
   }
 }
