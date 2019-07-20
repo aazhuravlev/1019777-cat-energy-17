@@ -1,7 +1,7 @@
 .more-items {
   text-align: center;
 
-  border: solid 1px #ededed;
+  border: solid 1px @border-color;
 }
 
 .more-items__title {
@@ -18,7 +18,7 @@
   margin: 0;
   margin-bottom: 20px;
 
-  color: @gray--darker;
+  color: @second-font-color;
 
   .arial(12px; 16px);
 }
@@ -26,16 +26,16 @@
 .more-items__button {
   margin-bottom: 20px;
 
-  color: @gray--darker;
-  background-color: @gray--lighter;
+  color: @second-font-color;
+  background-color: @button-gray;
 
   &:hover,
   &:focus {
-    background-color: @gray;
+    background-color: @button-gray--hover;
   }
 
   &:active {
     color: rgba(68, 68, 68, 0.3);
-    background-color: @gray;
+    background-color: @button-gray--active;
   }
 }
