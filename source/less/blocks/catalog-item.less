@@ -1,7 +1,15 @@
 .catalog-item {
-  margin-bottom: -1px;
-
   border: solid 1px #ededed;
+  border-top: none;
+  padding-bottom: 20px;
+
+  &:first-child {
+    border: solid 1px #ededed;
+  }
+
+  &:last-child {
+    border-bottom: none;
+  }
 }
 
 .catalog-item__title {
@@ -15,6 +23,3 @@
   .oswald;
 }
 
-.catalog-item__button {
-  margin-bottom: 20px;
-}
