@@ -21,20 +21,20 @@
   text-transform: uppercase;
 }
 
-.wrapper-mobile {
-  width: @mobile-width - 20px*2;
+.wrapper-mobile(@padding-mobile: 20px) {
+  width: @mobile-width - @padding-mobile*2;
   margin: 0 auto;
-  padding: 0 20px;
+  padding: 0 @padding-mobile;
 }
 
-.wrapper-tablet {
-  width: @tablet-width - 30px*2;
+.wrapper-tablet(@padding-tablet: 30px) {
+  width: @tablet-width - @padding-tablet*2;
   margin: 0 auto;
-  padding: 0 30px;
+  padding: 0 @padding-tablet;
 }
 
-.wrapper-desktop {
-  width: @desktop-width - 110px*2;
+.wrapper-desktop(@padding-desktop: 110px) {
+  width: @desktop-width - @padding-tablet*2;
   margin: 0 auto;
-  padding: 0 110px;
+  padding: 0 @padding-desktop;
 }
