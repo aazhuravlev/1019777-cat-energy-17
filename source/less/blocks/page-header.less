@@ -1,3 +1,19 @@
 .page-header {
   .wrapper-mobile(0);
 }
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    .wrapper-tablet;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    display: flex;
+    justify-content: space-between;
+    .wrapper-desktop;
+  }
+}
