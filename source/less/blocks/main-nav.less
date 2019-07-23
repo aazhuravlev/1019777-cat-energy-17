@@ -21,7 +21,24 @@
     display: flex;
   }
 
+  .main-nav__item {
+    margin-left: 35px;
+
+    &:first-child {
+      margin-left: 0;
+    }
+  }
+
   .main-nav__link {
     border: none;
+    .oswald(18px; 25px);
+    font-weight: @base-font-weight;
+  }
+}
+
+
+@media (min-width: @desktop-width) {
+  .main-nav__link {
+    .oswald(20px; 25px);
   }
 }
