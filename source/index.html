@@ -96,40 +96,43 @@
       </section>
 
       <section class="example">
-        <h2 class="example__title section-title">Живой пример</h2>
-        <p class="example__desc area-desciption">
-          Борис сбросил 5 кг за 2 месяца, просто
-          заменив свой обычный корм на Cat
-          Energy Slim. Отличный результат без
-          изнуряющих тренировок! При этом он не
-          менял своих привычек и по-прежнему
-          спит по 16 часов в день.
-        </p>
-        <div class="example__stats changes">
-          <div class="changes__wrapper">
-            <b class="changes__result">5 кг</b>
-            <p class="changes__field">снижение веса</p>
+        <div class="example__wrapper">
+          <h2 class="example__title section-title">Живой пример</h2>
+          <p class="example__desc area-desciption">
+            Борис сбросил 5 кг за 2 месяца, просто
+            заменив свой обычный корм на Cat
+            Energy&#160;Slim. Отличный результат без
+            изнуряющих тренировок! При этом он не
+            менял своих привычек и по-прежнему
+            спит по 16 часов в день.
+          </p>
+          <div class="example__stats changes">
+            <div class="changes__wrapper changes__wrapper--weight">
+              <b class="changes__result">5 кг</b>
+              <p class="changes__field">снижение веса</p>
+            </div>
+            <div class="changes__wrapper changes__wrapper--days">
+              <b class="changes__result">60 дней</b>
+              <p class="changes__field">затрачено времени</p>
+            </div>
+            <p class="changes__cost">Затраты на питание: 15 000 руб.</p>
           </div>
-          <div class="changes__wrapper">
-            <b class="changes__result">60 дней</b>
-            <p class="changes__field">затрачено времени</p>
+          <div class="example__wrapper slider">
+            <input class="visually-hidden" type="radio" id="slide-before" name="promo-toggle" checked>
+            <input class="visually-hidden" type="radio" id="slide-after" name="promo-toggle">
+            <div class="slider__toggles">
+              <label class="slider__toggle slider__toggle--before" for="slide-before">Было</label>
+              <div class="slider__scale"></div>
+              <label class="slider__toggle slider__toggle--after" for="slide-after">Стало</label>
+            </div>
+            <div class="slider__list">
+              <img class="slider__photo slider__photo--before" src="#" alt="Фотография до">
+              <img class="slider__photo slider__photo--after" src="#" alt="Фотография после">
+            </div>
+            </ul>
           </div>
-          <p class="changes__cost">Затраты на питание: 15 000 руб.</p>
         </div>
-        <div class="example__wrapper slider">
-          <input class="visually-hidden" type="radio" id="slide-before" name="promo-toggle" checked>
-          <input class="visually-hidden" type="radio" id="slide-after" name="promo-toggle">
-          <div class="slider__toggles">
-            <label class="slider__toggle slider__toggle--before" for="slide-before">Было</label>
-            <div class="slider__scale"></div>
-            <label class="slider__toggle slider__toggle--after" for="slide-after">Стало</label>
-          </div>
-          <div class="slider__list">
-            <img class="slider__photo slider__photo--before" src="#" alt="Фотография до">
-            <img class="slider__photo slider__photo--after" src="#" alt="Фотография после">
-          </div>
-          </ul>
-        </div>
+
       </section>
 
     </main>
