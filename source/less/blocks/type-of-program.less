@@ -1,3 +1,7 @@
+.type-of-program {
+  .wrapper-mobile;
+}
+
 .type-of-program__list {
   margin-bottom: 10px;
 
@@ -9,5 +13,35 @@
 
   &:last-child {
     margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .type-of-program {
+    .wrapper-tablet;
+  }
+
+  .type-of-program__program-item {
+    margin-bottom: 30px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .type-of-program {
+    .wrapper-desktop;
+  }
+
+  .type-of-program__list {
+    display: flex;
+  }
+
+  .type-of-program__program-item {
+    margin-right: 80px;
+    width: 570px;
+    margin-bottom: 0;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 }
