@@ -4,6 +4,7 @@
   color: @contrast-font-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
+  .wrapper-mobile(0);
 }
 
 .store-description__title {
@@ -20,4 +21,46 @@
   text-transform: uppercase;
 
   .oswald(14px; 14px);
+}
+
+.store-description__button {
+  .wrapper-mobile;
+}
+
+@media (min-width: @tablet-width) {
+  .store-description {
+    display: flex;
+    flex-direction: column;
+    color: @gray--darkest;
+    background-image: none;
+    .wrapper-tablet;
+    text-align: left;
+  }
+
+  .store-description__title {
+    width: 420px;
+    .oswald(60px; 60px);
+    padding: 0;
+    margin-bottom: 30px;
+  }
+
+  .store-description__slogan {
+    .oswald(20px; 20px);
+    margin-bottom: 40px;
+  }
+
+  .store-description__image {
+    order: 4;
+  }
+
+  .store-description__button {
+    width: 245px;
+    margin: 0;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .store-description{
+    .wrapper-desktop;
+  }
 }
