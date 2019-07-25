@@ -1,12 +1,7 @@
 .cooperation {
-  width: @mobile-width;
-  margin: 0 auto;
-}
-
-.cooperation__wrapper {
+  .wrapper-mobile;
   display: flex;
   justify-content: space-between;
-  .wrapper-mobile;
   margin-bottom: 20px;
   padding-top: 25px;
 }
@@ -27,19 +22,8 @@
   .arial(14px; 20px);
 }
 
-.cooperation__map {
-  border: none;
-  margin-bottom: -3px;
-  width: @mobile-width;
-  height: 362px;
-}
-
 @media (min-width: @tablet-width) {
   .cooperation {
-    width: @tablet-width;
-  }
-
-  .cooperation__wrapper {
     display: flex;
     justify-content: space-between;
     .wrapper-tablet;
@@ -58,20 +42,10 @@
     width: 155px;
     margin-right: 40px;
   }
-
-  .cooperation__map {
-    width: @tablet-width;
-    height: 400px;
-  }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation {
-    position: relative;
-    width: @desktop-width;
-  }
-
-  .cooperation__wrapper {
     width: 570px;
     padding: 60px 0;
     margin: 0;
@@ -88,9 +62,5 @@
   .cooperation__adress {
     text-align: left;
     margin-right: 90px;
-  }
-
-  .cooperation__map {
-    width: @desktop-width;
   }
 }
