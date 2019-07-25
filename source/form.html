@@ -33,47 +33,53 @@
 
         <form action="https://echo.htmlacademy.ru" method="post">
 
-          <fieldset class="selection__area main-information">
-            <legend class="visually-hidden">Данные Вашего кота:</legend>
-            <div class="main-information__item">
-              <label for="name" class="main-information__label selection__label">Имя:<sup>*</sup></label>
-              <input type="text" name="name" id="name" class="main-information__value selection__value" placeholder="Барсик" required>
-            </div>
-            <div class="main-information__item">
-              <label for="weight" class="main-information__label selection__label">Вес (кг):<sup>*</sup></label>
-              <input type="number" name="weight" id="weight" class="main-information__value selection__value" placeholder="7" required>
-            </div>
-            <div class="main-information__item">
-              <label for="age" class="main-information__label selection__label">Возраст (лет):</label>
-              <input type="number" name="age" id="age" class="main-information__value selection__value" placeholder="7">
-            </div>
-          </fieldset>
+          <div class="selection__container">
+            <fieldset class="selection__area main-information">
+              <legend class="visually-hidden">Данные Вашего кота:</legend>
+              <div class="main-information__item">
+                <label for="name" class="main-information__label selection__label">Имя:<sup>*</sup></label>
+                <input type="text" name="name" id="name" class="main-information__value selection__value" placeholder="Барсик" required>
+              </div>
+              <div class="main-information__item">
+                <label for="weight" class="main-information__label selection__label">Вес (кг):<sup>*</sup></label>
+                <input type="number" name="weight" id="weight" class="main-information__value selection__value" placeholder="7" required>
+              </div>
+              <div class="main-information__item">
+                <label for="age" class="main-information__label selection__label">Возраст (лет):</label>
+                <input type="number" name="age" id="age" class="main-information__value selection__value" placeholder="7">
+              </div>
+            </fieldset>
 
-          <fieldset class="selection__area program-information">
-            <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
-            <div class="program-information__item">
-              <label for="weight-loss" class="program-information__label selection__label">Похудение</label>
-              <input type="radio" name="weight-loss" id="weight-loss" class="visually-hidden" checked>
-            </div>
-            <div class="program-information__item">
-              <label for="weight-gain" class="program-information__label selection__label">Набор массы</label>
-              <input type="radio" name="weight-gain" id="weight-gain" class="visually-hidden">
-            </div>
-            <div class="program-information__item">
-              <label for="dunno" class="program-information__label selection__label">Не знаю (Нужен ваш совет)</label>
-              <input type="radio" name="dunno" id="dunno" class="visually-hidden">
-            </div>
-          </fieldset>
+            <fieldset class="selection__area program-information">
+              <div class="program-information__wrapper">
+                <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
+                <div class="program-information__item">
+                  <label for="weight-loss" class="program-information__label selection__label">Похудение</label>
+                  <input type="radio" name="weight-loss" id="weight-loss" class="visually-hidden" checked>
+                </div>
+                <div class="program-information__item">
+                  <label for="weight-gain" class="program-information__label selection__label">Набор массы</label>
+                  <input type="radio" name="weight-gain" id="weight-gain" class="visually-hidden">
+                </div>
+                <div class="program-information__item">
+                  <label for="dunno" class="program-information__label selection__label">Не знаю (Нужен ваш совет)</label>
+                  <input type="radio" name="dunno" id="dunno" class="visually-hidden">
+                </div>
+              </div>
+            </fieldset>
+          </div>
 
           <fieldset class="selection__area contacts-information">
             <legend class="contacts-information__title field-title">Контактные данные(владельца кота)</legend>
-            <div class="contacts-information__item">
-              <label for="email" class="contacts-information__label selection__label">E-mail:<sup>*</sup></label>
-              <input type="email" name="email" id="email" class="contacts-information__value selection__value" placeholder="kuklachev@gmail.com" required>
-            </div>
-            <div class="contacts-information__item">
-              <label for="phone" class="contacts-information__label selection__label">Телефон:<sup>*</sup></label>
-              <input type="tel" name="phone" id="phone" class="contacts-information__value selection__value" placeholder="8 (960) 900-60-90" required>
+            <div class="contacts-information__wrapper">
+              <div class="contacts-information__item">
+                <label for="email" class="contacts-information__label selection__label">E-mail:<sup>*</sup></label>
+                <input type="email" name="email" id="email" class="contacts-information__value selection__value" placeholder="kuklachev@gmail.com" required>
+              </div>
+              <div class="contacts-information__item">
+                <label for="phone" class="contacts-information__label selection__label">Телефон:<sup>*</sup></label>
+                <input type="tel" name="phone" id="phone" class="contacts-information__value selection__value" placeholder="8 (960) 900-60-90" required>
+              </div>
             </div>
           </fieldset>
 
@@ -84,27 +90,31 @@
 
           <fieldset class="selection__area additional-information">
             <legend class="additional-information__title field-title">Дополнительно</legend>
-            <div class="additional-information__item">
-              <label for="sweetener" class="additional-information__label selection__label">Сахарозаменитель</label>
-              <input type="checkbox" name="sweetener" id="sweetener" class="visually-hidden" checked>
+            <div class="additional-information__wrapper">
+              <div class="additional-information__item">
+                <label for="sweetener" class="additional-information__label selection__label">Сахарозаменитель</label>
+                <input type="checkbox" name="sweetener" id="sweetener" class="visually-hidden" checked>
+              </div>
+              <div class="additional-information__item">
+                <label for="water" class="additional-information__label selection__label">Питьевая вода</label>
+                <input type="checkbox" name="water" id="water" class="visually-hidden">
+              </div>
+              <div class="additional-information__item">
+                <label for="milk" class="additional-information__label selection__label">Молоко</label>
+                <input type="checkbox" name="milk" id="milk" class="visually-hidden">
+              </div>
+              <div class="additional-information__item">
+                <label for="vitamins" class="additional-information__label selection__label">Витамины</label>
+                <input type="checkbox" name="vitamins" id="vitamins" class="visually-hidden">
+              </div>
             </div>
-            <div class="additional-information__item">
-              <label for="water" class="additional-information__label selection__label">Питьевая вода</label>
-              <input type="checkbox" name="water" id="water" class="visually-hidden">
-            </div>
-            <div class="additional-information__item">
-              <label for="milk" class="additional-information__label selection__label">Молоко</label>
-              <input type="checkbox" name="milk" id="milk" class="visually-hidden">
-            </div>
-            <div class="additional-information__item">
-              <label for="vitamins" class="additional-information__label selection__label">Витамины</label>
-              <input type="checkbox" name="vitamins" id="vitamins" class="visually-hidden">
-            </div>
+
           </fieldset>
 
-          <button type="submit" class="selection__button button">Отправить заявку</button>
-          <p class="selection__required"><sup>*</sup> — Обязательные поля</p>
-
+          <div class="selection__wrapper">
+            <button type="submit" class="selection__button button">Отправить заявку</button>
+            <p class="selection__required"><sup>*</sup> — Обязательные поля</p>
+          </div>
         </form>
       </section>
 
