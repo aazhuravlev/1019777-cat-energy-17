@@ -1,8 +1,11 @@
 .program-information {
   padding: 25px 0;
 
-  border-top: solid 1px #ededed;
-  border-bottom: solid 1px #ededed;
+  border: solid 1px #ededed;
+}
+
+.program-information__wrapper {
+  .wrapper-mobile;
 }
 
 .program-information__item {
@@ -15,4 +18,35 @@
 
 .program-information__label {
   margin-left: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .program-information {
+    padding: 35px 0;
+    margin-bottom: 60px;
+  }
+
+  .program-information__wrapper {
+    width: 630px;
+    margin: 0;
+    padding: 0;
+  }
+
+  .program-information__item {
+    margin-bottom: 30px;
+  }
+
+  .program-information__label {
+    margin-left: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .program-information {
+    margin-bottom: 0;
+  }
+
+  .program-information__wrapper {
+    width: 570px;
+  }
 }

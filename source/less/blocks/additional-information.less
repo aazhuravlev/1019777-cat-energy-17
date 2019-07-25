@@ -1,4 +1,5 @@
 .additional-information {
+  .wrapper-mobile;
   margin-bottom: 25px;
 }
 
@@ -12,4 +13,34 @@
 
 .additional-information__label {
   margin-left: 50px;
+}
+
+@media (min-width: @tablet-width) {
+  .additional-information {
+    width: 630px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 20px;
+  }
+
+  .additional-information__title {
+    margin-bottom: 30px;
+  }
+
+  .additional-information__wrapper {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+  }
+  .additional-information__item {
+    display: block;
+    width: 220px;
+    margin-bottom: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .additional-information {
+    width: 1220px;
+  }
 }

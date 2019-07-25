@@ -1,7 +1,44 @@
+.contacts-information {
+  .wrapper-mobile;
+}
+
 .contacts-information__item {
   margin-bottom: 10px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .contacts-information {
+    width: 630px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .contacts-information__title {
+    margin-bottom: 50px;
+  }
+
+  .contacts-information__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .contacts-information {
+    width: 1220px;
+  }
+
+  .contacts-information__wrapper {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+  }
+
+  .contacts-information__item {
     margin-bottom: 0;
   }
 }

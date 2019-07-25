@@ -1,4 +1,5 @@
 .main-information {
+  .wrapper-mobile;
   margin-bottom: 20px;
 }
 
@@ -6,6 +7,25 @@
   margin-bottom: 10px;
 
   &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .main-information {
+    width: 630px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 50px;
+  }
+
+  .main-information__item {
+    margin-bottom: 20px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .main-information {
     margin-bottom: 0;
   }
 }
