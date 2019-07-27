@@ -1,10 +1,12 @@
 .store-description {
+  position: relative;
   text-align: center;
 
   color: @contrast-font-color;
   background-image: url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat;
-  .wrapper-mobile(0);
+  background-position: center 0;
+
   margin-bottom: 20px;
 }
 
@@ -26,6 +28,18 @@
 
 .store-description__button {
   .wrapper-mobile;
+}
+
+@media (max-width: @mobile-width-only) {
+  .store-description::before {
+    position: absolute;
+    left: 0;
+    width: 100%;
+    height: 305px;
+    z-index: -1;
+    content: "";
+    background-color: @background-elements;
+  }
 }
 
 @media (min-width: @tablet-width) {
