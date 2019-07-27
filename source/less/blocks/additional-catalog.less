@@ -1,5 +1,5 @@
 .additional-catalog {
-  .wrapper-mobile;
+  .wrapper(@mobile-width; 20px);
 }
 
 .additional-catalog__list {
@@ -31,7 +31,7 @@
 
 @media (min-width: @tablet-width) {
   .additional-catalog {
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
   }
 
   .additional-catalog__list {
@@ -62,7 +62,7 @@
 
 @media (min-width: @desktop-width) {
   .additional-catalog {
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
   }
 
   .additional-catalog__wrap {

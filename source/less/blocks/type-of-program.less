@@ -1,5 +1,5 @@
 .type-of-program {
-  .wrapper-mobile;
+  .wrapper(@mobile-width; 20px);
 }
 
 .type-of-program__list {
@@ -18,7 +18,7 @@
 
 @media (min-width: @tablet-width) {
   .type-of-program {
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
   }
 
   .type-of-program__list {
@@ -32,7 +32,7 @@
 
 @media (min-width: @desktop-width) {
   .type-of-program {
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
   }
 
   .type-of-program__list {

@@ -3,13 +3,13 @@
 }
 
 .example__title {
-  .wrapper-mobile;
+  .wrapper(@mobile-width; 20px);
   padding-top: 10px;
   margin-bottom: 10px;
 }
 
 .example__wrapper {
-  .wrapper-mobile;
+  .wrapper(@mobile-width; 20px);
 }
 
 @media (min-width: @tablet-width) {
@@ -19,13 +19,13 @@
   }
 
   .example__title {
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
     margin-top: 20px;
     margin-bottom: 70px;
   }
 
   .example__wrapper {
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
   }
 
   .example__desc {
@@ -44,7 +44,7 @@
   }
 
   .example__title {
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
     margin-bottom: 65px;
   }
 
@@ -53,7 +53,7 @@
   }
 
   .example__wrap {
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
     display: flex;
   }
 

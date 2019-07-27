@@ -1,12 +1,12 @@
 .page-header {
-  .wrapper-mobile(0);
+  .wrapper(@mobile-width; 0);
 }
 
 @media (min-width: @tablet-width) {
   .page-header {
     display: flex;
     justify-content: space-between;
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
     margin-bottom: 70px;
   }
 }
@@ -15,7 +15,7 @@
   .page-header {
     display: flex;
     justify-content: space-between;
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
     margin-bottom: 70px;
   }
 }

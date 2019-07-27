@@ -18,7 +18,7 @@
 }
 
 .page-footer__wrapper {
-  .wrapper-mobile;
+  .wrapper(@mobile-width; 20px);
 }
 
 @media (min-width: @tablet-width) {
@@ -27,7 +27,7 @@
   }
 
   .page-footer__wrapper {
-    .wrapper-tablet;
+    .wrapper(@tablet-width; 30px);
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
@@ -42,7 +42,7 @@
   }
 
   .page-footer__wrapper {
-    .wrapper-desktop;
+    .wrapper(@desktop-width; 40px);
     display: flex;
     justify-content: space-between;
     padding: 60px 0;
