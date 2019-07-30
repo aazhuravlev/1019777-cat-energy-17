@@ -1,5 +1,5 @@
 .section-title {
-  .wrapper(@mobile-width; 20px);
+  .wrapper;
   margin-bottom: 25px;
 
   font-weight: @base-font-weight;
@@ -9,13 +9,6 @@
 
 @media (min-width: @tablet-width) {
   .section-title {
-    .wrapper(@tablet-width; 30px);
     .oswald(60px; 60px);
-  }
-}
-
-@media (min-width: @desktop-width) {
-  .section-title {
-    .wrapper(@desktop-width; 40px);
   }
 }

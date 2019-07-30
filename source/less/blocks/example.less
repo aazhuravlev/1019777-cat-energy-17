@@ -3,13 +3,13 @@
 }
 
 .example__title {
-  .wrapper(@mobile-width; 20px);
+  .wrapper;
   padding-top: 10px;
   margin-bottom: 10px;
 }
 
 .example__wrapper {
-  .wrapper(@mobile-width; 20px);
+  .wrapper;
 }
 
 @media (min-width: @tablet-width) {
@@ -19,13 +19,8 @@
   }
 
   .example__title {
-    .wrapper(@tablet-width; 30px);
     margin-top: 20px;
     margin-bottom: 70px;
-  }
-
-  .example__wrapper {
-    .wrapper(@tablet-width; 30px);
   }
 
   .example__desc {
@@ -44,7 +39,6 @@
   }
 
   .example__title {
-    .wrapper(@desktop-width; 40px);
     margin-bottom: 65px;
   }
 
@@ -53,11 +47,12 @@
   }
 
   .example__wrap {
-    .wrapper(@desktop-width; 40px);
+    .wrapper;
     display: flex;
   }
 
   .example__wrapper {
+    width: 50%;
     margin: 0;
     margin-top: 70px;
     padding: 0;

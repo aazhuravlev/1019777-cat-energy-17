@@ -1,5 +1,5 @@
 .type-of-program {
-  .wrapper(@mobile-width; 20px);
+  .wrapper;
 }
 
 .type-of-program__list {
@@ -17,10 +17,6 @@
 }
 
 @media (min-width: @tablet-width) {
-  .type-of-program {
-    .wrapper(@tablet-width; 30px);
-  }
-
   .type-of-program__list {
     margin-bottom: 30px;
   }
@@ -31,10 +27,6 @@
 }
 
 @media (min-width: @desktop-width) {
-  .type-of-program {
-    .wrapper(@desktop-width; 40px);
-  }
-
   .type-of-program__list {
     display: flex;
   }
