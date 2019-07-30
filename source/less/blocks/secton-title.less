@@ -1,8 +1,14 @@
 .section-title {
-  margin: 0;
-  padding: 20px 0 25px;
+  .wrapper;
+  margin-bottom: 25px;
 
   font-weight: @base-font-weight;
 
   .oswald(36px; 60px);
+}
+
+@media (min-width: @tablet-width) {
+  .section-title {
+    .oswald(60px; 60px);
+  }
 }

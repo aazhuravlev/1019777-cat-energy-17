@@ -1,23 +1,20 @@
 .cooperation {
-  background-color: @white;
-}
-
-.cooperation__wrapper {
-  margin-bottom: 20px;
+  .wrapper;
+  display: flex;
+  justify-content: space-between;
+  padding-bottom: 20px;
   padding-top: 25px;
 }
 
-.cooperation--inner-page {
-  background-color: @background-gray;
-}
-
 .cooperation__invite {
+  width: 125px;
   text-transform: uppercase;
 
   font-weight: @base-font-weight;
 }
 
 .cooperation__adress {
+  width: 135px;
   margin: 0;
 
   color: @second-font-color;
@@ -25,6 +22,42 @@
   .arial(14px; 20px);
 }
 
-.cooperation__map {
-  border: none;
+@media (min-width: @tablet-width) {
+  .cooperation {
+    display: flex;
+    justify-content: space-between;
+    padding: 60px 0;
+  }
+
+  .cooperation__invite {
+    width: 155px;
+    .oswald(20px; 25px);
+    margin-left: 40px;
+  }
+
+  .cooperation__adress {
+    .arial(16px; 20px);
+    text-align: right;
+    width: 155px;
+    margin-right: 40px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .cooperation {
+    width: 570px;
+    margin: 0;
+    position: absolute;
+    top: 120px;
+    background-color: @background-color;
+  }
+
+  .cooperation__invite {
+    margin-left: 70px;
+  }
+
+  .cooperation__adress {
+    text-align: left;
+    margin-right: 90px;
+  }
 }

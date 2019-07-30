@@ -1,4 +1,6 @@
 .catalog-item {
+  .wrapper;
+  width: 278px;
   border: solid 1px @border-color;
   border-top: none;
   padding-bottom: 20px;
@@ -6,17 +8,139 @@
   &:first-child {
     border: solid 1px @border-color;
   }
+}
 
-  &:last-child {
-    border-bottom: none;
-  }
+.catalog-item__container {
+  display: flex;
+}
+
+.catalog-item__wrapper {
+  width: 145px;
 }
 
 .catalog-item__title {
+  .oswald(16px; 20px);
+  width: 81px;
   margin: 0;
+  margin-top: 20px;
   margin-bottom: 10px;
 
   text-transform: uppercase;
 
   font-weight: @base-font-weight;
+}
+
+.catalog-item__button {
+  margin-top: 20px;
+}
+
+.catalog-item--more {
+  text-align: center;
+}
+
+.catalog-item__title--more {
+  width: auto;
+  margin: 0;
+  padding-top: 90px;
+}
+
+.catalog-item__button--more {
+  color: @second-font-color;
+  background-color: @button-alt-color;
+
+  &:hover,
+  &:focus {
+    background-color: @button-alt-color--hover;
+  }
+
+  &:active {
+    color: rgba(68, 68, 68, 0.3);
+    background-color: @button-alt-color--active;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .catalog-item {
+    margin: 0;
+    margin-right: 60px;
+    margin-top: 140px;
+    width: 249px;
+    padding: 0 37px;
+    border: none;
+    background-color: @background-alt-color;
+
+    &:first-child {
+      border: none;
+      margin-top: 0;
+    }
+
+    &:nth-child(2) {
+      margin-top: 0;
+    }
+
+    &:last-child {
+      background-color: @background-color;
+      border: 1px solid @border-color;
+    }
+
+    &:nth-child(2n+2) {
+      margin-right: 0;
+    }
+  }
+
+  .catalog-item__container {
+    flex-direction: column;
+  }
+
+  .catalog-item__wrapper {
+    width: 249px;
+  }
+
+  .catalog-item__title {
+    .oswald(20px; 20px);
+    text-align: center;
+    width: 130px;
+    margin: 0 auto;
+    margin-top: 40px;
+    margin-bottom: 20px;
+  }
+
+  .catalog-item__button {
+    margin-top: 30px;
+    margin-bottom: 40px;
+    .oswald(16px; 20px);
+    padding: 10px 0;
+  }
+
+  .catalog-item__title--more {
+    width: 135px;
+    padding-top: 90px;
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .catalog-item {
+    width: 169px;
+    margin-right: 80px;
+
+    &:nth-child(2n) {
+      margin-right: 80px;
+    }
+
+    &:nth-child(4n) {
+      margin-right: 0;
+    }
+
+    &:nth-child(3) {
+      margin-top: 0;
+    }
+
+    &:nth-child(4) {
+      margin-top: 0;
+    }
+  }
+
+  .catalog-item__wrapper {
+    width: 169px;
+  }
 }
