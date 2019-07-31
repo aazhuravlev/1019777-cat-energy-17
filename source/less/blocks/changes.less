@@ -4,17 +4,18 @@
 }
 
 .changes__wrapper {
-  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 34px;
 }
 
 .changes__wrapper--weight {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .changes__result {
   display: block;
 
-  width: 120px;
+  width: 122px;
   padding: 15px 0;
 
   text-align: center;
@@ -29,17 +30,23 @@
 }
 
 .changes__field {
-  margin: 0 auto;
+  position: absolute;
   text-align: center;
-  width: 60px;
+  width: 87px;
+
+  top: 35px;
+  left: 18px;
 
   color: @second-font-color;
 
   .arial(12px; 12px);
+  background-color: @background-alt-color;
 }
 
 .changes__cost {
   display: flex;
+  width: 187px;
+  justify-content: space-between;
   margin: 0 auto;
   margin-bottom: 30px;
   text-transform: uppercase;
