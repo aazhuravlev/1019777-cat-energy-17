@@ -1,9 +1,23 @@
 .field-title {
-  padding: 30px 0;
+  padding-top: 28px;
+  padding-bottom: 34px;
+  margin: 0;
 
   font-weight: @base-font-weight;
+  overflow: hidden;
 
   .oswald(24px; 24px);
+
+  &::before {
+    position: absolute;
+    content: "";
+    z-index: -1;
+    right: 0;
+    top: 42px;
+    width: 50%;
+    height: 3px;
+    background-color: @background-elements;
+  }
 }
 
 @media (min-width: @tablet-width) {

@@ -1,16 +1,26 @@
 .additional-catalog {
+  position: relative;
+}
+
+.additional-catalog__wrap {
   .wrapper;
+}
+
+.additional-catalog__title {
+  width: 247px;
+  background-color: white;
 }
 
 .additional-catalog__list {
   .list-reset;
-  margin-bottom: 30px;
+  margin-bottom: 39px;
 }
 
 .additional-catalog__wrapper {
+  position: relative;
   padding: 0;
-  padding-bottom: 45px;
-  margin-bottom: 35px;
+  padding-bottom: 42px;
+  margin-bottom: 34px;
 
   background-color: @background-elements;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
@@ -18,15 +28,29 @@
 }
 
 .additional-catalog__condition {
-  width: 160px;
+  width: 161px;
   margin: 0 auto;
-  padding-top: 190px;
+  padding-top: 187px;
 
   text-align: center;
 
   color: @contrast-font-color;
 
-  .arial;
+  .arial(16px; 20px);
+
+  &::before {
+    content: "";
+
+    position: absolute;
+    top: 65px;
+    left: 113px;
+
+    width: 56px;
+    height: 61px;
+
+    background-image: url("../img/icon-gift.svg");
+    background-repeat: no-repeat;
+  }
 }
 
 @media (min-width: @tablet-width) {
