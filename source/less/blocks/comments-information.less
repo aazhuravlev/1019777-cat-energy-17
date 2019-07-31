@@ -1,5 +1,26 @@
 .comments-information {
+  position: relative;
+}
+
+.comments-information__wrap {
   .wrapper;
+}
+
+.comments-information__title {
+  width: 142px;
+  background-color: @background-color;
+}
+
+.comments-information__value {
+  display: block;
+  margin: 0 auto;
+  margin-top: 1px;
+  width: 251px;
+  height: 123px;
+
+  &:focus {
+    padding-left: 15px;
+  }
 }
 
 @media (min-width: @tablet-width) {

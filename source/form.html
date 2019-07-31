@@ -26,7 +26,7 @@
 
     <main class="page-main">
 
-      <h1 class="section-title">Подбор программы</h1>
+      <h1 class="section-title section-title--form">Подбор программы</h1>
 
       <section class="selection">
         <p class="selection__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
@@ -54,58 +54,71 @@
               <div class="program-information__wrapper">
                 <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
                 <div class="program-information__item">
+                  <input type="radio" name="type-of-program" value="weight-loss" id="weight-loss" class="visually-hidden program-information__radio" checked>
                   <label for="weight-loss" class="program-information__label selection__label">Похудение</label>
-                  <input type="radio" name="weight-loss" id="weight-loss" class="visually-hidden" checked>
                 </div>
                 <div class="program-information__item">
+                  <input type="radio" name="type-of-program" value="weight-gain" id="weight-gain" class="visually-hidden program-information__radio">
                   <label for="weight-gain" class="program-information__label selection__label">Набор массы</label>
-                  <input type="radio" name="weight-gain" id="weight-gain" class="visually-hidden">
                 </div>
                 <div class="program-information__item">
+                  <input type="radio" name="type-of-program" value="dunno" id="dunno" class="visually-hidden program-information__radio">
                   <label for="dunno" class="program-information__label selection__label">Не знаю (Нужен ваш совет)</label>
-                  <input type="radio" name="dunno" id="dunno" class="visually-hidden">
                 </div>
               </div>
             </fieldset>
           </div>
 
           <fieldset class="selection__area contacts-information">
-            <legend class="contacts-information__title field-title">Контактные данные(владельца кота)</legend>
+            <div class="contacts-information__wrap">
+              <legend class="contacts-information__title field-title">Контактные данные (владельца кота)</legend>
+            </div>
             <div class="contacts-information__wrapper">
               <div class="contacts-information__item">
                 <label for="email" class="contacts-information__label selection__label">E-mail:<sup>*</sup></label>
                 <input type="email" name="email" id="email" class="contacts-information__value selection__value" placeholder="kuklachev@gmail.com" required>
+                <svg class="contacts-information__icon" width="19" height="13" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 17 13" style="enable-background:new 0 0 17 13;" xml:space="preserve">
+                  <path fill="#222222" d="M15.6,11.6H1.4V5.8H0V13h17V5.8h-1.4V11.6z M0,0v2.3l8.5,7.1L17,2.3V0H0z M15.6,1.6L8.5,7.5L1.4,1.6V1.4h14.2L15.6,1.6z"/>
+                </svg>
               </div>
               <div class="contacts-information__item">
                 <label for="phone" class="contacts-information__label selection__label">Телефон:<sup>*</sup></label>
                 <input type="tel" name="phone" id="phone" class="contacts-information__value selection__value" placeholder="8 (960) 900-60-90" required>
+                <svg class="contacts-information__icon contacts-information__icon--phone" width="20" height="20" version="1.1" id="Layer_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 20 20" style="enable-background:new 0 0 20 20;" xml:space="preserve">
+                  <path fill="#222222" d="M17.9,9.4H9.4v1.2h8.5l-2.1,2.1l0.9,0.9l3.1-3.1c0.2-0.2,0.2-0.6,0-0.9l-3.1-3.1l-0.9,0.9L17.9,9.4z"/>
+                  <path fill="#222222" d="M8.1,19.4v-6.2c0-0.3-0.3-0.6-0.6-0.6H4.4l0,0H3.1l0,0c0,0.7,0.6,1.2,1.2,1.2h2.5v5H3.1c-1,0.1-1.8-0.7-1.9-1.7c0-0.1,0-0.1,0-0.2V3.1c0-1,0.8-1.8,1.7-1.8c0.1,0,0.1,0,0.2,0h3.7v5H4.4c-0.7,0-1.2,0.6-1.2,1.2h4.4c0.3,0,0.6-0.3,0.6-0.6V0.6C8.1,0.3,7.8,0,7.5,0H3.1C1.5-0.1,0.1,1.2,0,2.9C0,3,0,3.1,0,3.1v13.7c-0.1,1.7,1.2,3.1,2.9,3.1c0.1,0,0.2,0,0.2,0h4.4C7.8,20,8.1,19.7,8.1,19.4z"/>
+                </svg>
               </div>
             </div>
           </fieldset>
 
           <fieldset class="selection__area comments-information">
-            <legend class="comments-information__title field-title">Комментарий</legend>
-              <textarea type="text" name="comments" class="comments-information__value selection__value" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <div class="comments-information__wrap">
+              <legend class="comments-information__title field-title">Комментарий</legend>
+            </div>
+            <textarea type="text" name="comments" class="comments-information__value selection__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
 
           <fieldset class="selection__area additional-information">
-            <legend class="additional-information__title field-title">Дополнительно</legend>
+            <div class="additional-information__wrap">
+              <legend class="additional-information__title field-title">Дополнительно</legend>
+            </div>
             <div class="additional-information__wrapper">
               <div class="additional-information__item">
+                <input type="checkbox" name="additional-information" value="sweetener" id="sweetener" class="visually-hidden additional-information__checkbox" checked>
                 <label for="sweetener" class="additional-information__label selection__label">Сахарозаменитель</label>
-                <input type="checkbox" name="sweetener" id="sweetener" class="visually-hidden" checked>
               </div>
               <div class="additional-information__item">
+                <input type="checkbox" name="additional-information" value="water" id="water" class="visually-hidden additional-information__checkbox">
                 <label for="water" class="additional-information__label selection__label">Питьевая вода</label>
-                <input type="checkbox" name="water" id="water" class="visually-hidden">
               </div>
               <div class="additional-information__item">
+                <input type="checkbox" name="additional-information" value="milk" id="milk" class="visually-hidden additional-information__checkbox">
                 <label for="milk" class="additional-information__label selection__label">Молоко</label>
-                <input type="checkbox" name="milk" id="milk" class="visually-hidden">
               </div>
               <div class="additional-information__item">
+                <input type="checkbox" name="additional-information" value="vitamins" id="vitamins" class="visually-hidden additional-information__checkbox">
                 <label for="vitamins" class="additional-information__label selection__label">Витамины</label>
-                <input type="checkbox" name="vitamins" id="vitamins" class="visually-hidden">
               </div>
             </div>
 
