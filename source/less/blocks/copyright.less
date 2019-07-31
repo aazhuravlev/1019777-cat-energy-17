@@ -1,12 +1,25 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 13px;
+
+  &:hover path,
+  &:focus path {
+    fill: @icon-color--reaction;
+  }
+
+  &:active {
+    fill: @icon-color--reaction;
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
+  .arial(16px; 16px);
   margin: 0;
+  margin-top: 10px;
 
-  text-decoration: none;
   text-transform: none;
 
   color: @second-font-color;

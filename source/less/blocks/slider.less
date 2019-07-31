@@ -4,32 +4,91 @@
   margin: 0 auto;
 }
 
-.slider__wrapper {
-  .wrapper;
-  display: flex;
-  flex-direction: column;
+#slide-before ~ .slider__list .slider__photo--before,
+#slide-after ~ .slider__list .slider__photo--after {
+  display: none;
+}
+
+#slide-before:checked ~ .slider__list .slider__photo--before,
+#slide-after:checked ~ .slider__list .slider__photo--after {
+  display: block;
+}
+
+#slide-before:checked ~ .slider__toggles .slider__toggle--before,
+#slide-after:checked ~ .slider__toggles .slider__toggle--after {
+
+  &::after {
+    content: "";
+      position: absolute;
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+      background-color: @background-elements;
+  }
+}
+
+#slide-before:checked ~ .slider__toggles .slider__toggle--before::after {
+  top: 7px;
+  left: 125px;
+}
+
+#slide-after:checked ~ .slider__toggles .slider__toggle--after::after {
+  top: 7px;
+  right: 125px;
+}
+
+#slide-before ~ .slider__toggles .slider__toggle--before,
+#slide-after ~ .slider__toggles .slider__toggle--after {
+
+  &::after {
+    content: "";
+      position: absolute;
+      width: 35px;
+      height: 6px;
+      border-radius: 3px;
+  }
+}
+
+#slide-before ~ .slider__toggles .slider__toggle--before::after {
+  top: 7px;
+  left: 125px;
+}
+
+#slide-after ~ .slider__toggles .slider__toggle--after::after {
+  top: 7px;
+  right: 125px;
 }
 
 .slider__toggles {
+  .wrapper;
+  position: relative;
   display: flex;
-  order: 2;
+  width: 200px;
   justify-content: center;
+  order: 2;
   margin-bottom: 35px;
   text-transform: uppercase;
 }
 
+.slider__toggle {
+  width: 40px;
+  cursor: pointer;
+}
+
 .slider__scale {
-  width: 84px;
-  height: 14px;
+  width: 83px;
+  height: 12px;
   border-radius: 6px;
-  border: solid 1px @scale-color-mobile;
-  background-color: @background-color;
-  margin: 2px 17px 0;
+  border: solid 1px @scale-border-color;
+  background-color: @scale-color-mobile;
+  margin: 0 16px;
+  margin-top: 3px;
 }
 
 .slider__list {
+  width: 320px;
   margin: 0 auto;
-  margin-bottom: 35px;
+  margin-bottom: 32px;
 }
 
 @media (min-width: @tablet-width) {
