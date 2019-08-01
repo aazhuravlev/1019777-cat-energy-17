@@ -111,7 +111,7 @@
               <div class="example__stats changes">
                 <div class="changes__wrapper changes__wrapper--weight">
                   <b class="changes__result">5 кг</b>
-                  <p class="changes__field">снижение<br>веса</p>
+                  <p class="changes__field changes__field--weight">снижение<br>веса</p>
                 </div>
                 <div class="changes__wrapper changes__wrapper--days">
                   <b class="changes__result">60 дней</b>
@@ -127,9 +127,11 @@
               <input class="visually-hidden" type="radio" id="slide-before" name="promo-toggle" checked>
               <input class="visually-hidden" type="radio" id="slide-after" name="promo-toggle">
               <div class="slider__toggles">
-                <label class="slider__toggle slider__toggle--before" for="slide-before">Было</label>
-                <div class="slider__scale"></div>
-                <label class="slider__toggle slider__toggle--after" for="slide-after">Стало</label>
+                <label class="slider__label slider__label--before" for="slide-before">Было</label>
+                <div class="slider__scale">
+                  <button type="button" class="slider__toggle"></button>
+                </div>
+                <label class="slider__label slider__label--after" for="slide-after">Стало</label>
               </div>
               <div class="slider__list">
                 <img class="slider__photo slider__photo--before" src="img/before-mobile@1x.png" width="320" height="240" alt="Фотография до">
@@ -153,9 +155,13 @@
             дилеров!
           </b>
           <p class="cooperation__adress">
-            ул. Большая
-            Конюшенная, д. 19/8
-            Санкт-Петербург
+            <span class="cooperation__street">
+              ул. Большая
+              Конюшенная, д. 19/8
+            </span>
+            <span class="cooperation__city">
+              Санкт-Петербург
+            </span>
           </p>
         </div>
       </div>

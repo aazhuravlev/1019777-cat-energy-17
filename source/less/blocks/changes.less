@@ -16,7 +16,8 @@
   display: block;
 
   width: 122px;
-  padding: 15px 0;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   text-align: center;
   text-transform: uppercase;
@@ -32,15 +33,20 @@
 .changes__field {
   position: absolute;
   text-align: center;
+  margin: 0;
   width: 87px;
 
-  top: 35px;
+  top: 47px;
   left: 18px;
 
   color: @second-font-color;
 
   .arial(12px; 12px);
   background-color: @background-alt-color;
+
+  &--weight {
+    width: ;
+  }
 }
 
 .changes__cost {
@@ -59,15 +65,32 @@
 }
 
 @media (min-width: @tablet-width) {
+  .changes__wrapper--weight {
+    margin-right: 42px;
+  }
+
   .changes__result {
     width: 160px;
-    padding: 20px 0;
+    padding-top: 15px;
+    padding-bottom: 18px;
     .oswald(30px; 37px);
   }
 
   .changes__field {
     .arial(14px; 14px);
-    width: 140px;
+    width: 142px;
+    top: 63px;
+    left: 10px;
+    background-color: @background-color;
+
+    &--weight {
+      width: 114px;
+      left: 24px;
+    }
+  }
+
+  .changes__field br {
+    display: none;
   }
 
   .changes__cost {
@@ -77,7 +100,12 @@
     text-align: right;
     margin: 0;
     margin-left: auto;
+    margin-top: 11px;
     margin-bottom: 100px;
+  }
+
+  .changes__label {
+    margin-bottom: 9px;
   }
 }
 

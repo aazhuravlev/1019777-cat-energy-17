@@ -14,63 +14,66 @@
   display: block;
 }
 
-#slide-before:checked ~ .slider__toggles .slider__toggle--before,
-#slide-after:checked ~ .slider__toggles .slider__toggle--after {
+#slide-before:checked ~ .slider__toggles .slider__label--before,
+#slide-after:checked ~ .slider__toggles .slider__label--after {
 
   &::after {
     content: "";
-      position: absolute;
-      width: 35px;
-      height: 6px;
-      border-radius: 3px;
-      background-color: @background-elements;
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
+    background-color: @background-elements;
   }
 }
 
-#slide-before:checked ~ .slider__toggles .slider__toggle--before::after {
+#slide-before:checked ~ .slider__toggles .slider__label--before::after {
   top: 7px;
-  left: 125px;
+  left: 105px;
 }
 
-#slide-after:checked ~ .slider__toggles .slider__toggle--after::after {
+#slide-after:checked ~ .slider__toggles .slider__label--after::after {
   top: 7px;
-  right: 125px;
+  right: 105px;
 }
 
-#slide-before ~ .slider__toggles .slider__toggle--before,
-#slide-after ~ .slider__toggles .slider__toggle--after {
+#slide-before ~ .slider__toggles .slider__label--before,
+#slide-after ~ .slider__toggles .slider__label--after {
 
   &::after {
     content: "";
-      position: absolute;
-      width: 35px;
-      height: 6px;
-      border-radius: 3px;
+    position: absolute;
+    width: 35px;
+    height: 6px;
+    border-radius: 3px;
   }
 }
 
-#slide-before ~ .slider__toggles .slider__toggle--before::after {
+#slide-before ~ .slider__toggles .slider__label--before::after {
   top: 7px;
-  left: 125px;
+  left: 105px;
 }
 
-#slide-after ~ .slider__toggles .slider__toggle--after::after {
+#slide-after ~ .slider__toggles .slider__label--after::after {
   top: 7px;
-  right: 125px;
+  right: 105px;
 }
 
 .slider__toggles {
-  .wrapper;
+  width: 280px;
+  margin: 0 auto;
+  box-sizing: border-box;
+  padding-left: 44px;
+  padding-right: 39px;
   position: relative;
   display: flex;
-  width: 200px;
-  justify-content: center;
+  justify-content: space-between;
   order: 2;
   margin-bottom: 35px;
   text-transform: uppercase;
 }
 
-.slider__toggle {
+.slider__label {
   width: 40px;
   cursor: pointer;
 }
@@ -85,6 +88,10 @@
   margin-top: 3px;
 }
 
+.slider__toggle {
+  display: none;
+}
+
 .slider__list {
   width: 320px;
   margin: 0 auto;
@@ -96,24 +103,93 @@
     background-color: @background-alt-color;
   }
 
+  #slide-before:checked ~ .slider__toggles .slider__label--before,
+  #slide-after:checked ~ .slider__toggles .slider__label--after {
+
+    &::after {
+      display: none;
+  }
+}
+
   .slider__toggles {
-    margin-top: 350px;
-    margin-bottom: 70px;
+    width: 708px;
+    box-sizing: border-box;
+    padding-left: 68px;
+    padding-right: 69px;
+    margin-top: 95px;
+    margin-bottom: 67px;
   }
 
-  .slider__toggle {
+  .slider__label {
+    width: auto;
     .oswald(20px; 20px);
     padding-bottom: 7px;
     border-bottom: 1px dotted @scale-color;
+
+    &:hover,
+    &:focus {
+      border-bottom: 1px solid @scale-color;
+    }
+
+    &:active {
+      border: none;
+    }
   }
 
   .slider__scale {
-    margin: 7px 20px 0;
+    position: relative;
+    margin: 0;
+    margin-top: 8px;
     width: 428px;
     height: 6px;
     border-radius: 2.5px;
     background-color: @scale-color;
     border: none;
+  }
+
+  .slider__toggle {
+    display: block;
+    position: absolute;
+    top: -14px;
+    left: 199px;
+
+    width: 34px;
+    height: 34px;
+    padding: 0;
+
+    cursor: pointer;
+
+    border: 1px solid @scale-border-color;
+    border-radius: 50%;
+    background-color: @background-color;
+    box-shadow: @scale-shadow;
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: 12px;
+      right: 12px;
+
+      width: 8px;
+      height: 8px;
+      border-radius: 50%;
+      background-color: @background-elements;
+    }
+
+    &:hover,
+    &:focus {
+      box-shadow: @scale-shadow--focus;
+    }
+
+    &:active {
+      border: solid 2px @background-elements;
+      box-shadow: @scale-shadow--active;
+    }
+
+    &:active::before {
+      top: 11px;
+      right: 11px;
+    }
   }
 }
 
