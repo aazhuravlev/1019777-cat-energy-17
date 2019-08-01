@@ -80,10 +80,16 @@
     margin: 0;
     margin-right: 60px;
     margin-top: 140px;
-    width: 249px;
-    padding: 0 37px;
+    width: 324px;
+    box-sizing: border-box;
+    padding-left: 38px;
+    padding-right: 37px;
     border: none;
     background-color: @background-alt-color;
+
+    &--more {
+      padding-bottom: 23px;
+    }
 
     &:first-child {
       border: none;
@@ -117,20 +123,20 @@
     text-align: center;
     width: 130px;
     margin: 0 auto;
-    margin-top: 40px;
+    margin-top: 19px;
     margin-bottom: 20px;
+
+    &--more {
+      width: 135px;
+      padding-top: 144px;
+    }
   }
 
   .catalog-item__button {
-    margin-top: 30px;
-    margin-bottom: 40px;
+    margin-top: 33px;
+    margin-bottom: 16px;
     .oswald(16px; 20px);
     padding: 10px 0;
-  }
-
-  .catalog-item__title--more {
-    width: 135px;
-    padding-top: 90px;
   }
 }
 
