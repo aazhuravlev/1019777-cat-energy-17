@@ -25,19 +25,29 @@
 
 @media (min-width: @tablet-width) {
   .comments-information {
-    width: 630px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px;
+    margin-bottom: 37px;
+  }
+
+  .comments-information__wrap {
+    .wrapper;
   }
 
   .comments-information__title {
-    margin-bottom: 50px;
+    width: 180px;
+    padding-left: 40px;
+    padding-right: 39px;
+    margin-bottom: 42px;
   }
 
   .comments-information__value {
-    width: 95%;
-    height: 142px;
+    .wrapper-tablet-form;
+    box-sizing: border-box;
+    padding: 14px 20px 15px;
+    height: 174px;
+
+    &:focus {
+      padding: 13px 19px 15px;
+    }
   }
 }
 
