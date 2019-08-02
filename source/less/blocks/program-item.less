@@ -159,18 +159,45 @@
 
 @media (min-width: @desktop-width) {
   .program-item {
+    padding: 76px 52px 45px;
+
     &:last-child .program-item__desc {
       width: 445px;
     }
   }
 
   .program-item__title {
-    margin-left: 160px;
-    margin-bottom: 70px;
+    margin-left: 162px;
+    margin-bottom: 74px;
+
+    &::before {
+      top: -29px;
+      left: -162px;
+      width: 100px;
+      height: 100px;
+    }
+
+    &::after {
+      top: -35px;
+      left: -148px;
+      width: 71px;
+      height: 97px;
+    }
+
+    &--weight-gain::after {
+      top: -7px;
+      left: -180px;
+      width: 134px;
+      height: 57px;
+    }
   }
 
   .program-item__desc {
     width: 465px;
-    margin-bottom: 30px;
+    margin-bottom: 14px;
+  }
+
+  .program-item__link::after {
+    top: 21px;
   }
 }

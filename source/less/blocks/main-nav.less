@@ -147,13 +147,10 @@
   .main-nav__link {
     margin-top: 68px;
     .oswald(20px; 25px);
-    //color: @contrast-font-color;
+    color: @contrast-font-color;
 
-    &--active {
-
-      &::after {
-        //background-color: @main-nav__link--active-contrast-color;
+    &--active::after {
+        background-color: @main-nav__link--active-contrast-color;
       }
     }
   }
-}
