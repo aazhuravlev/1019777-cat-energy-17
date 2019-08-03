@@ -17,16 +17,6 @@
   position: relative;
   margin-bottom: 27px;
 
-  &::before {
-    content: "";
-    position: absolute;
-    top: -2px;
-    left: 0;
-    width: 60px;
-    height: 60px;
-    background-color: @background-elements;
-  }
-
   &:last-child {
     margin-bottom: 0;
   }
@@ -35,52 +25,32 @@
 .how-it-works__desc {
   padding-left: 80px;
 
-  &--leaf::after {
+  &::after {
     content: "";
     position: absolute;
-    top: 6px;
-    left: 8px;
-    width: 45px;
-    height: 45px;
-    background-image: url("../img/advantage-leaf@1x.png");
+    top: -2px;
+    left: 0;
+    width: 60px;
+    height: 60px;
+    background-color: @background-elements;
     background-repeat: no-repeat;
     background-position: center center;
+  }
+
+  &--leaf::after {
+    background-image: url("../img/advantage-leaf@1x.png");
   }
 
   &--water::after {
-    content: "";
-    position: absolute;
-    top: 5px;
-    left: 8px;
-    width: 45px;
-    height: 45px;
     background-image: url("../img/advantage-powder@1x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 
   &--fork::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 7px;
-    width: 45px;
-    height: 45px;
     background-image: url("../img/advantage-dining@1x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 
   &--clock::after {
-    content: "";
-    position: absolute;
-    top: 6px;
-    left: 8px;
-    width: 45px;
-    height: 45px;
     background-image: url("../img/advantage-clock@1x.png");
-    background-repeat: no-repeat;
-    background-position: center center;
   }
 }
 
@@ -114,12 +84,6 @@
     &:nth-last-child(2) {
       margin-bottom: 0;
     }
-
-    &::before {
-      top: 0;
-      width: 80px;
-      height: 80px;
-    }
   }
 
   .how-it-works__desc {
@@ -127,6 +91,12 @@
     padding-right: 22%;
     padding-top: 112px;
     padding-bottom: 44px;
+
+    &::after {
+      top: 0;
+      width: 80px;
+      height: 80px;
+    }
 
     &::before {
       counter-increment: list1;
@@ -141,32 +111,12 @@
       z-index: -1;
     }
 
-    &--leaf::after {
-      top: 18px;
-      left: 18px;
-    }
-
-    &--water::after {
-      top: 18px;
-      left: 18px;
-    }
-
     &--water::before {
       right: 73px;
     }
 
-    &--fork::after {
-      top: 18px;
-      left: 18px;
-    }
-
     &--fork::before {
       right: 72px;
-    }
-
-    &--clock::after {
-      top: 18px;
-      left: 18px;
     }
 
     &--clock::before {
