@@ -1,35 +1,20 @@
 .social {
-  .list-reset;
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
   display: flex;
   justify-content: center;
   border-top: 1px solid @divine-border-color;
   border-bottom: 1px solid @divine-border-color;
-  margin-bottom: 20px;
 }
 
 .social__link {
   display: flex;
-  width: 50px;
-  padding: 17px 0;
-  margin-top: 6px;
-  margin-bottom: 4px;
-
-  svg {
-    margin: 0 auto;
-  }
-
-  &--vk {
-    margin-top: 9px;
-  }
-
-  &--inst {
-    margin-left: 4px;
-    margin-right: 5px;
-  }
-
-  &--fb {
-    margin-top: 5px;
-  }
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
 
   &:hover path,
   &:focus path,
@@ -48,7 +33,5 @@
 @media (min-width: @tablet-width) {
   .social {
     border: none;
-    margin-left: 35px;
-    margin-bottom: 45px;
   }
 }
