@@ -4,60 +4,75 @@
   margin: 0 auto;
 }
 
-#slide-before ~ .slider__list .slider__photo--before,
-#slide-after ~ .slider__list .slider__photo--after {
-  display: none;
-}
+//#slide-before ~ .slider__list .slider__photo--before {
+//  display: none;
+//}
 
-#slide-before:checked ~ .slider__list .slider__photo--before,
-#slide-after:checked ~ .slider__list .slider__photo--after {
-  display: block;
-}
+//#slide-after ~ .slider__list .slider__photo--after {
+//  display: none;
+//}
 
-#slide-before:checked ~ .slider__toggles .slider__label--before,
-#slide-after:checked ~ .slider__toggles .slider__label--after {
+//#slide-before:checked ~ .slider__list .slider__photo--before {
+//  display: block;
+//}
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-    background-color: @background-elements;
-  }
-}
+//#slide-after:checked ~ .slider__list .slider__photo--after {
+//  display: block;
+//}
 
-#slide-before:checked ~ .slider__toggles .slider__label--before::after {
-  top: 7px;
-  left: 105px;
-}
+//#slide-before:checked ~ .slider__toggles .slider__label--before::after {
+//  content: "";
+//  position: absolute;
+//  width: 35px;
+//  height: 6px;
+//  border-radius: 3px;
+//  background-color: @background-elements;
+//}
 
-#slide-after:checked ~ .slider__toggles .slider__label--after::after {
-  top: 7px;
-  right: 105px;
-}
+//#slide-after:checked ~ .slider__toggles .slider__label--after::after {
+//  content: "";
+//  position: absolute;
+//  width: 35px;
+//  height: 6px;
+//  border-radius: 3px;
+//  background-color: @background-elements;
+//}
 
-#slide-before ~ .slider__toggles .slider__label--before,
-#slide-after ~ .slider__toggles .slider__label--after {
+// #slide-before:checked ~ .slider__toggles .slider__label--before::after {
+//   top: 7px;
+//   left: 105px;
+// }
 
-  &::after {
-    content: "";
-    position: absolute;
-    width: 35px;
-    height: 6px;
-    border-radius: 3px;
-  }
-}
+// #slide-after:checked ~ .slider__toggles .slider__label--after::after {
+//  top: 7px;
+//  right: 105px;
+// }
 
-#slide-before ~ .slider__toggles .slider__label--before::after {
-  top: 7px;
-  left: 105px;
-}
+// #slide-before ~ .slider__toggles .slider__label--before::after {
+//  content: "";
+//  position: absolute;
+//  width: 35px;
+//  height: 6px;
+//  border-radius: 3px;
+// }
 
-#slide-after ~ .slider__toggles .slider__label--after::after {
-  top: 7px;
-  right: 105px;
-}
+// #slide-after ~ .slider__toggles .slider__label--after::after {
+//  content: "";
+//  position: absolute;
+//  width: 35px;
+//  height: 6px;
+//  border-radius: 3px;
+// }
+
+// #slide-before ~ .slider__toggles .slider__label--before::after {
+//  top: 7px;
+//  left: 105px;
+// }
+
+// #slide-after ~ .slider__toggles .slider__label--after::after {
+//  top: 7px;
+//  right: 105px;
+// }
 
 .slider__toggles {
   width: 280px;
@@ -98,18 +113,22 @@
   margin-bottom: 32px;
 }
 
+.slider__photo--after {
+  display: none;
+}
+
 @media (min-width: @tablet-width) {
   .slider {
     background-color: @background-alt-color;
   }
 
-  #slide-before:checked ~ .slider__toggles .slider__label--before,
-  #slide-after:checked ~ .slider__toggles .slider__label--after {
+  //#slide-before:checked ~ .slider__toggles .slider__label--before {
+  //  display: none;
+  //}
 
-    &::after {
-      display: none;
-  }
-}
+  //#slide-after:checked ~ .slider__toggles .slider__label--after::after {
+  //  display: none;
+  //}
 
   .slider__toggles {
     width: 708px;
@@ -126,7 +145,10 @@
     padding-bottom: 7px;
     border-bottom: 1px dotted @scale-color;
 
-    &:hover,
+    &:hover {
+      border-bottom: 1px solid @scale-color;
+    }
+
     &:focus {
       border-bottom: 1px solid @scale-color;
     }
@@ -176,7 +198,10 @@
       background-color: @background-elements;
     }
 
-    &:hover,
+    &:hover {
+      box-shadow: @scale-shadow--focus;
+    }
+
     &:focus {
       box-shadow: @scale-shadow--focus;
     }
@@ -210,7 +235,7 @@
     justify-content: space-between;
     padding: 0;
     margin-left: 40px;
-    margin-right: 0px;
+    margin-right: 0;
     margin-bottom: 67px;
   }
 }

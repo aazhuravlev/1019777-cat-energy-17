@@ -41,7 +41,10 @@
   background-color: @background-elements;
 }
 
-.program-information__radio:hover + .program-information__label::before ,
+.program-information__radio:hover + .program-information__label::before {
+  border-color: @radio-box-color--hover;
+}
+
 .program-information__radio:focus + .program-information__label::before {
   border-color: @radio-box-color--hover;
 }
@@ -91,6 +94,5 @@
     padding-left: 27px;
     padding-top: 26px;
     padding-bottom: 23px;
-
   }
 }

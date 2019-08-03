@@ -30,18 +30,15 @@
     background-color: @background-elements;
   }
 
-  &--weight-loss {
-
-    &::after {
-      content: "";
-      position: absolute;
-      top: 22px;
-      left: 10px;
-      width: 36px;
-      height: 49px;
-      background-image: url("../img/icon-cat-slim.svg");
-      background-repeat: no-repeat;
-    }
+  &--weight-loss::after {
+    content: "";
+    position: absolute;
+    top: 22px;
+    left: 10px;
+    width: 36px;
+    height: 49px;
+    background-image: url("../img/icon-cat-slim.svg");
+    background-repeat: no-repeat;
   }
 
   &--weight-gain::after {
@@ -70,7 +67,7 @@
   color: @base-font-color;
   .link;
 
-  &:after {
+  &::after {
     content: "";
     position: absolute;
     top: 23px;
@@ -82,20 +79,20 @@
     background-repeat: no-repeat;
   }
 
-  &:hover::after {
-    width: 33px;
-    height: 11px;
-    right: 1px;
-    background-image: url("../img/icon-right-arrow-verylong.svg");
-  }
-
   &:active {
     opacity: 0.3;
   }
+}
 
-  &:active::after {
-    opacity: 0.3;
-  }
+.program-item__link:hover::after {
+  width: 33px;
+  height: 11px;
+  right: 1px;
+  background-image: url("../img/icon-right-arrow-verylong.svg");
+}
+
+.program-item__link:active::after {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
