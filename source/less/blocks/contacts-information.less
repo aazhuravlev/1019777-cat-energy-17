@@ -83,16 +83,27 @@
 
 @media (min-width: @desktop-width) {
   .contacts-information {
-    width: 1220px;
+    margin-bottom: 38px;
+  }
+
+  .contacts-information__wrap {
+    width: 1300px;
+    padding: 0;
   }
 
   .contacts-information__wrapper {
+    .wrapper;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
   }
 
   .contacts-information__item {
+    width: 570px;
     margin-bottom: 0;
+  }
+
+  .contacts-information__label {
+    padding-right: 18px;
   }
 }

@@ -53,10 +53,22 @@
 
 @media (min-width: @desktop-width) {
   .comments-information {
-    width: 1220px;
+    width: auto;
+    padding: 0;
+    margin-bottom: 39px;
+  }
+
+  .comments-information__wrap {
+    width: 1300px;
+    padding: 0;
   }
 
   .comments-information__value {
-    width: 1190px;
+    width: 1219px;
+    padding: 15px 18px 15px;
+
+    &:focus {
+      padding: 14px 17px 15px;
+    }
   }
 }

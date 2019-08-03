@@ -45,8 +45,26 @@
     justify-content: space-between;
     margin-bottom: 117px;
 
+    &::before {
+      position: absolute;
+      content: "";
+      width: 720px;
+      height: 696px;
+      top: 0;
+      right: -69px;
+      background-color: @background-elements;
+      background-image: url("../img/index-background-desktop@1x.jpg");
+      background-repeat: no-repeat;
+      background-position: 0 0;
+      z-index: -10;
+    }
+
     &--inner-page {
       margin-bottom: 84px;
+
+      &::before {
+        display: none;
+      }
     }
   }
 }
