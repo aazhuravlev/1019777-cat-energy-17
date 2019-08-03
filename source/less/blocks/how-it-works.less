@@ -97,6 +97,7 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 0;
+    counter-reset: list1;
   }
 
   .how-it-works__item {
@@ -128,7 +129,8 @@
     padding-bottom: 44px;
 
     &::before {
-      content: "";
+      counter-increment: list1;
+      content: counter(list1) "";
       position: absolute;
       top: -39px;
       right: 89px;
@@ -144,17 +146,12 @@
       left: 18px;
     }
 
-    &--leaf::before {
-      content: "1";
-    }
-
     &--water::after {
       top: 18px;
       left: 18px;
     }
 
     &--water::before {
-      content: "2";
       right: 73px;
     }
 
@@ -164,7 +161,6 @@
     }
 
     &--fork::before {
-      content: "3";
       right: 72px;
     }
 
@@ -174,7 +170,6 @@
     }
 
     &--clock::before {
-      content: "4";
       right: 69px;
     }
   }
