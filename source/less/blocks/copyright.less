@@ -1,13 +1,39 @@
 .copyright {
   display: flex;
   justify-content: space-between;
+  text-decoration: none;
+  margin-bottom: 13px;
+  margin-top: 21px;
+
+  &:hover path,
+  &:focus path {
+    fill: @icon-color--reaction;
+  }
+
+  &:active {
+    fill: @icon-color--reaction;
+    opacity: 0.3;
+  }
 }
 
 .copyright__name {
+  .arial(16px; 16px);
   margin: 0;
+  margin-top: 10px;
 
-  text-decoration: none;
   text-transform: none;
 
   color: @second-font-color;
+}
+
+@media (min-width: @tablet-width) {
+  .copyright {
+    margin: 0;
+    margin-top: 13px;
+    margin-bottom: 48px;
+  }
+
+  .copyright__name {
+    margin-right: 15px;
+  }
 }

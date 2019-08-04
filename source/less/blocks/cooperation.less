@@ -2,8 +2,8 @@
   .wrapper;
   display: flex;
   justify-content: space-between;
-  padding-bottom: 20px;
-  padding-top: 25px;
+  padding-bottom: 25px;
+  padding-top: 28px;
 }
 
 .cooperation__invite {
@@ -16,6 +16,7 @@
 .cooperation__adress {
   width: 135px;
   margin: 0;
+  margin-right: 4px;
 
   color: @second-font-color;
 
@@ -26,38 +27,49 @@
   .cooperation {
     display: flex;
     justify-content: space-between;
-    padding: 60px 0;
+    padding-top: 63px;
+    padding-bottom: 58px;
   }
 
   .cooperation__invite {
     width: 155px;
     .oswald(20px; 25px);
-    margin-left: 40px;
+    margin-top: 2px;
+    margin-left: 41px;
   }
 
   .cooperation__adress {
     .arial(16px; 20px);
     text-align: right;
     width: 155px;
-    margin-right: 40px;
+    margin-right: 42px;
+  }
+
+  .cooperation__street {
+    display: block;
+    margin-bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation {
     width: 570px;
+    box-sizing: border-box;
     margin: 0;
+    padding-top: 63px;
+    padding-bottom: 58px;
     position: absolute;
-    top: 120px;
+    left: 6px;
+    top: 95px;
     background-color: @background-color;
   }
 
   .cooperation__invite {
-    margin-left: 70px;
+    margin-left: 37px;
   }
 
   .cooperation__adress {
     text-align: left;
-    margin-right: 90px;
+    margin-right: 49px;
   }
 }

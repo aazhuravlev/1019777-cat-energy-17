@@ -1,31 +1,42 @@
 .main-information {
   .wrapper;
-  margin-bottom: 20px;
+  margin-bottom: 23px;
 }
 
 .main-information__item {
-  margin-bottom: 10px;
+  margin-bottom: 14px;
+  display: flex;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
+.main-information__label {
+  padding-top: 13px;
+  padding-right: 13px;
+}
+
 @media (min-width: @tablet-width) {
   .main-information {
-    width: 630px;
-    margin: 0;
-    padding: 0;
-    margin-bottom: 50px;
+    .wrapper-tablet-form;
+    margin-bottom: 72px;
   }
 
   .main-information__item {
     margin-bottom: 20px;
   }
+
+  .main-information__label {
+    padding-top: 15px;
+    padding-right: 17px;
+  }
 }
 
 @media (min-width: @desktop-width) {
   .main-information {
-    margin-bottom: 0;
+    width: 570px;
+    margin: 0;
+    padding: 0;
   }
 }

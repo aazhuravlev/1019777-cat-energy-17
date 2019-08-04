@@ -4,18 +4,20 @@
 }
 
 .changes__wrapper {
-  margin-bottom: 15px;
+  position: relative;
+  margin-bottom: 34px;
 }
 
 .changes__wrapper--weight {
-  margin-right: 30px;
+  margin-right: 32px;
 }
 
 .changes__result {
   display: block;
 
-  width: 120px;
-  padding: 15px 0;
+  width: 122px;
+  padding-top: 14px;
+  padding-bottom: 16px;
 
   text-align: center;
   text-transform: uppercase;
@@ -29,19 +31,26 @@
 }
 
 .changes__field {
-  margin: 0 auto;
+  position: absolute;
   text-align: center;
-  width: 60px;
+  margin: 0;
+  width: 87px;
+
+  top: 47px;
+  left: 18px;
 
   color: @second-font-color;
 
   .arial(12px; 12px);
+  background-color: @background-alt-color;
 }
 
 .changes__cost {
   display: flex;
+  width: 187px;
+  justify-content: space-between;
   margin: 0 auto;
-  margin-bottom: 30px;
+  margin-bottom: 34px;
   text-transform: uppercase;
 
   .oswald(14px; 20px);
@@ -52,15 +61,32 @@
 }
 
 @media (min-width: @tablet-width) {
+  .changes__wrapper--weight {
+    margin-right: 42px;
+  }
+
   .changes__result {
     width: 160px;
-    padding: 20px 0;
+    padding-top: 15px;
+    padding-bottom: 18px;
     .oswald(30px; 37px);
   }
 
   .changes__field {
     .arial(14px; 14px);
-    width: 140px;
+    width: 142px;
+    top: 64px;
+    left: 10px;
+    background-color: @background-color;
+
+    &--weight {
+      width: 114px;
+      left: 24px;
+    }
+  }
+
+  .changes__field br {
+    display: none;
   }
 
   .changes__cost {
@@ -70,20 +96,37 @@
     text-align: right;
     margin: 0;
     margin-left: auto;
+    margin-top: 11px;
     margin-bottom: 100px;
+  }
+
+  .changes__label {
+    margin-bottom: 9px;
   }
 }
 
 @media (min-width: @desktop-width) {
+  .changes {
+    margin-bottom: 75px;
+  }
+
   .changes__wrapper {
     margin-bottom: 60px;
   }
 
   .changes__cost {
     justify-content: space-between;
-    width: 330px;
+    width: 328px;
     flex-direction: row;
     text-align: left;
     margin: 0;
+  }
+
+  .changes__field {
+    background-color: @background-alt-color;
+  }
+
+  .changes__label {
+    margin-bottom: 0;
   }
 }

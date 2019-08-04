@@ -1,5 +1,6 @@
 .program-information {
-  padding: 25px 0;
+  padding-top: 20px;
+  padding-bottom: 19px;
 
   border: solid 1px @radio-border;
 }
@@ -9,44 +10,89 @@
 }
 
 .program-information__item {
-  margin-bottom: 20px;
+  margin-bottom: 13px;
+  position: relative;
 
   &:last-child {
     margin-bottom: 0;
   }
 }
 
-.program-information__label {
-  margin-left: 50px;
+.program-information__radio + .program-information__label::before {
+  display: inline-block;
+  vertical-align: middle;
+  margin-right: 16px;
+  content: "";
+
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  border: 1px solid @radio-box-color;
+}
+
+.program-information__radio:checked + .program-information__label::after {
+  position: absolute;
+  content: "";
+  top: 9px;
+  left: 9px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: @background-elements;
+}
+
+.program-information__radio:hover + .program-information__label::before {
+  border-color: @radio-box-color--hover;
+}
+
+.program-information__radio:focus + .program-information__label::before {
+  border-color: @radio-box-color--hover;
+}
+
+.program-information__radio:active + .program-information__label {
+  opacity: 0.3;
 }
 
 @media (min-width: @tablet-width) {
   .program-information {
-    padding: 35px 0;
-    margin-bottom: 60px;
+    .wrapper-tablet-form;
+    box-sizing: border-box;
+    padding: 24px 0;
+    padding-left: 30px;
+    margin-bottom: 47px;
   }
 
   .program-information__wrapper {
-    width: 630px;
+    width: auto;
     margin: 0;
     padding: 0;
   }
 
   .program-information__item {
-    margin-bottom: 30px;
+    margin-bottom: 13px;
   }
 
-  .program-information__label {
-    margin-left: 90px;
+  .program-information__radio + .program-information__label::before {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
+  }
+
+  .program-information__radio:checked + .program-information__label::after {
+    width: 18px;
+    height: 18px;
+    top: 11px;
+    left: 11px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program-information {
-    margin-bottom: 0;
-  }
-
-  .program-information__wrapper {
     width: 570px;
+    box-sizing: border-box;
+    margin: 0;
+    padding-left: 27px;
+    padding-top: 26px;
+    padding-bottom: 23px;
   }
 }

@@ -1,6 +1,37 @@
 .social {
-  .list-reset;
+  margin: 0;
+  padding-left: 0;
+
+  list-style: none;
   display: flex;
-  border-top: 1px solid @border-color;
-  border-bottom: 1px solid @border-color;
+  justify-content: center;
+  border-top: 1px solid @divine-border-color;
+  border-bottom: 1px solid @divine-border-color;
+}
+
+.social__link {
+  display: flex;
+  width: 55px;
+  height: 55px;
+  justify-content: center;
+  align-items: center;
+
+  &:hover path,
+  &:focus path,
+  &:hover circle,
+  &:focus circle {
+    fill: @icon-color--reaction;
+  }
+
+  &:active path,
+  &:active circle {
+    fill: @icon-color--reaction;
+    opacity: 0.3;
+  }
+}
+
+@media (min-width: @tablet-width) {
+  .social {
+    border: none;
+  }
 }
