@@ -5,15 +5,19 @@
   margin-bottom: 13px;
   margin-top: 21px;
 
-  &:hover path,
-  &:focus path {
+  &:hover .copyright__icon,
+  &:focus .copyright__icon {
     fill: @icon-color--reaction;
   }
 
-  &:active {
+  &:active .copyright__icon {
     fill: @icon-color--reaction;
     opacity: 0.3;
   }
+}
+
+.copyright__icon {
+  fill: @svg-color;
 }
 
 .copyright__name {
