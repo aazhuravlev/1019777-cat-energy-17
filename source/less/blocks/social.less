@@ -17,18 +17,19 @@
   justify-content: center;
   align-items: center;
 
-  &:hover path,
-  &:focus path,
-  &:hover circle,
-  &:focus circle {
+  &:hover .social__icon,
+  &:focus .social__icon {
     fill: @icon-color--reaction;
   }
 
-  &:active path,
-  &:active circle {
+  &:active .social__icon {
     fill: @icon-color--reaction;
     opacity: 0.3;
   }
+}
+
+.social__icon {
+  fill: @svg-color;
 }
 
 @media (min-width: @tablet-width) {
