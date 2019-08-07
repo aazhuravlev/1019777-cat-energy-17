@@ -13,6 +13,7 @@
   display: flex;
   width: 55px;
   height: 55px;
+  box-sizing: border-box;
   justify-content: center;
   align-items: center;
 
@@ -33,5 +34,25 @@
 @media (min-width: @tablet-width) {
   .social {
     border: none;
+  }
+
+  .social__link--fb {
+    padding-right: 15px;
+    padding-bottom: 4px;
+  }
+
+  .social__icon--vk {
+    width: 30px;
+    height: 17px;
+  }
+
+  .social__icon--inst {
+    width: 23px;
+    height: 23px;
+  }
+
+  .social__icon--fb {
+    width: 14px;
+    height: 28px;
   }
 }

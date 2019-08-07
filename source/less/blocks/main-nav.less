@@ -92,8 +92,16 @@
     display: flex;
   }
 
+  .main-nav__list {
+    margin-top: 13px;
+  }
+
   .main-nav__item {
-    margin-right: 33px;
+    margin-right: 36px;
+
+    &:last-child {
+      margin-right: 0;
+    }
   }
 
   .main-nav__link {
@@ -138,7 +146,7 @@
 
 @media (min-width: @desktop-width) {
   .main-nav__item {
-    margin-right: 37px;
+    margin-right: 34px;
   }
 
   .main-nav__link {
