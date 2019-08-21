@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Подбор программы Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body>
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header page-header--inner-page">
 
@@ -45,11 +49,11 @@
               <legend class="visually-hidden">Данные Вашего кота:</legend>
               <div class="main-information__item">
                 <label for="name" class="main-information__label selection__label">Имя:<sup>*</sup></label>
-                <input type="text" name="name" id="name" class="main-information__value selection__value" placeholder="Барсик" required>
+                <input type="text" name="name" id="name" class="main-information__value selection__value" placeholder="Барсик" required="">
               </div>
               <div class="main-information__item">
                 <label for="weight" class="main-information__label selection__label">Вес (кг):<sup>*</sup></label>
-                <input type="number" name="weight" id="weight" class="main-information__value selection__value" placeholder="7" required>
+                <input type="number" name="weight" id="weight" class="main-information__value selection__value" placeholder="7" required="">
               </div>
               <div class="main-information__item">
                 <label for="age" class="main-information__label selection__label">Возраст (лет):</label>
@@ -61,7 +65,7 @@
               <div class="program-information__wrapper">
                 <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
                 <div class="program-information__item">
-                  <input type="radio" name="type-of-program" value="weight-loss" id="weight-loss" class="visually-hidden program-information__radio" checked>
+                  <input type="radio" name="type-of-program" value="weight-loss" id="weight-loss" class="visually-hidden program-information__radio" checked="">
                   <label for="weight-loss" class="program-information__label selection__label">Похудение</label>
                 </div>
                 <div class="program-information__item">
@@ -83,16 +87,16 @@
             <div class="contacts-information__wrapper">
               <div class="contacts-information__item">
                 <label for="email" class="contacts-information__label selection__label">E-mail:<sup>*</sup></label>
-                <input type="email" name="email" id="email" class="contacts-information__value selection__value" placeholder="kuklachev@gmail.com" required>
+                <input type="email" name="email" id="email" class="contacts-information__value selection__value" placeholder="kuklachev@gmail.com" required="">
                 <svg class="contacts-information__icon" width="19" height="13" viewBox="0 0 17 13">
-                  <use xlink:href="img/sprite.svg#mail"></use>
+                  <use xlink:href="#sprite-icon-mail"></use>
                 </svg>
               </div>
               <div class="contacts-information__item">
                 <label for="phone" class="contacts-information__label selection__label">Телефон:<sup>*</sup></label>
-                <input type="tel" name="phone" id="phone" class="contacts-information__value selection__value" placeholder="8 (960) 900-60-90" required>
+                <input type="tel" name="phone" id="phone" class="contacts-information__value selection__value" placeholder="8 (960) 900-60-90" required="">
                 <svg class="contacts-information__icon contacts-information__icon--phone" width="20" height="20" version="1.1" viewBox="0 0 20 20">
-                  <use xlink:href="img/sprite.svg#phone"></use>
+                  <use xlink:href="#sprite-icon-phone"></use>
                 </svg>
               </div>
             </div>
@@ -111,7 +115,7 @@
             </div>
             <div class="additional-information__wrapper">
               <div class="additional-information__item">
-                <input type="checkbox" name="additional-information" value="sweetener" id="sweetener" class="visually-hidden additional-information__checkbox" checked>
+                <input type="checkbox" name="additional-information" value="sweetener" id="sweetener" class="visually-hidden additional-information__checkbox" checked="">
                 <label for="sweetener" class="additional-information__label selection__label">Сахарозаменитель</label>
               </div>
               <div class="additional-information__item">
@@ -171,7 +175,7 @@
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="social__icon social__icon--vk" width="22" height="12" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -179,7 +183,7 @@
             <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Инстаграме</span>
               <svg class="social__icon social__icon--inst" width="17" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16">
-                <use xlink:href="img/sprite.svg#inst"></use>
+                <use xlink:href="#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -187,7 +191,7 @@
             <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg class="social__icon social__icon--fb" width="10" height="19" viewBox="0 0 10 19">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -195,7 +199,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright copyright">
           <p class="copyright__name">HTML Academy</p>
           <svg class="copyright__icon" width="34" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 8 50 55">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#sprite-icon-htmlacademy"></use>
           </svg>
         </a>
       </div>

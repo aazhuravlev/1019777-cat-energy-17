@@ -4,10 +4,14 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Кэт энерджи</title>
-    <link href="css/style.css" rel="stylesheet">
+    <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
   </head>
   <body class="page-body">
+
+    <div style="display:none">
+      <include src="build/img/sprite.svg"></include>
+    </div>
 
     <header class="page-header">
 
@@ -137,7 +141,7 @@
               </div>
             </div>
             <div class="example__slider slider">
-              <input class="visually-hidden" type="radio" id="slide-before" name="promo-toggle" checked>
+              <input class="visually-hidden" type="radio" id="slide-before" name="promo-toggle" checked="">
               <input class="visually-hidden" type="radio" id="slide-after" name="promo-toggle">
               <div class="slider__toggles">
                 <label class="slider__label slider__label--before" for="slide-before">Было</label>
@@ -206,7 +210,7 @@
             <a class="social__link social__link--vk" href="https://vk.com/htmlacademy">
               <span class="visually-hidden">Мы в Вконтакте</span>
               <svg class="social__icon social__icon--vk" width="22" height="12" viewBox="0 0 22 12">
-                <use xlink:href="img/sprite.svg#vk"></use>
+                <use xlink:href="#sprite-icon-vk"></use>
               </svg>
             </a>
           </li>
@@ -214,7 +218,7 @@
             <a class="social__link social__link--inst" href="https://www.instagram.com/htmlacademy">
               <span class="visually-hidden">Мы в Инстаграме</span>
               <svg class="social__icon social__icon--inst" width="17" height="17" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 16.1 16">
-                <use xlink:href="img/sprite.svg#inst"></use>
+                <use xlink:href="#sprite-icon-insta"></use>
               </svg>
             </a>
           </li>
@@ -222,7 +226,7 @@
             <a class="social__link social__link--fb" href="https://www.facebook.com/htmlacademy">
               <span class="visually-hidden">Мы в Фейсбуке</span>
               <svg class="social__icon social__icon--fb" width="10" height="19" viewBox="0 0 10 19">
-                <use xlink:href="img/sprite.svg#fb"></use>
+                <use xlink:href="#sprite-icon-fb"></use>
               </svg>
             </a>
           </li>
@@ -230,7 +234,7 @@
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright copyright">
           <p class="copyright__name">HTML Academy</p>
           <svg class="copyright__icon" width="34" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 8 50 55">
-            <use xlink:href="img/sprite.svg#htmlacademy"></use>
+            <use xlink:href="#sprite-icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
