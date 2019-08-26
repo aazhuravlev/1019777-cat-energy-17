@@ -68,31 +68,32 @@
 
   .additional-catalog__container {
     display: flex;
-    width: 633px;
+    width: 100%;
     flex-direction: row;
   }
 
   .additional-catalog__wrapper {
+    min-height: 159px;
     margin-bottom: 75px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-      background-size: 708px auto;
+      background-size: 100% auto;
     }
   }
 
   .additional-catalog__condition {
     .arial(16px; 20px);
     padding-top: 72px;
-    margin-left: 424px;
+    margin-left: 60%;
     margin-bottom: 26px;
     text-align: left;
-    width: 165px;
+    width: 26%;
 
     &::before {
-      left: 90px;
+      left: 7%;
     }
   }
 }
