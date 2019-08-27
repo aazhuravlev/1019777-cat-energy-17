@@ -1,13 +1,15 @@
 .description-item {
-  color: @second-font-color;
   display: flex;
   justify-content: space-between;
+
+  color: @second-font-color;
 
   .arial(12px; 16px);
 }
 
 .description-item--more {
   display: block;
+
   margin: 0 auto;
   margin-top: 8px;
   margin-bottom: 21px;
@@ -19,18 +21,22 @@
 
 @media (min-width: @tablet-width) {
   .description-item {
-    .arial(16px; 16px);
     margin-top: 1px;
     padding: 7px 0;
+
     border-bottom: 1px solid @divine-border-color;
+
+    .arial(16px; 16px);
   }
 
   .description-item--more {
-    line-height: 17px;
-    margin: 0 auto;
-    border: none;
-    margin-bottom: 80px;
     width: 52%;
+    margin: 0 auto;
+    margin-bottom: 80px;
+
+    border: none;
+
+    line-height: 17px;
   }
 }
 

@@ -1,9 +1,11 @@
 .copyright {
   display: flex;
   justify-content: space-between;
-  text-decoration: none;
-  margin-bottom: 13px;
+
   margin-top: 21px;
+  margin-bottom: 13px;
+
+  text-decoration: none;
 
   &:hover .copyright__icon,
   &:focus .copyright__icon {
@@ -11,8 +13,9 @@
   }
 
   &:active .copyright__icon {
-    fill: @icon-color--reaction;
     opacity: 0.3;
+
+    fill: @icon-color--reaction;
   }
 }
 
@@ -21,13 +24,14 @@
 }
 
 .copyright__name {
-  .arial(16px; 16px);
   margin: 0;
   margin-top: 10px;
 
   text-transform: none;
 
   color: @second-font-color;
+
+  .arial(16px; 16px);
 }
 
 @media (min-width: @tablet-width) {

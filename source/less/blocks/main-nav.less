@@ -2,19 +2,20 @@
   position: absolute;
   top: 0;
   right: 0;
-  padding: 0;
 
   display: block;
+
   width: 20%;
   height: 65px;
+  padding: 0;
 
   cursor: pointer;
+
   border: none;
   background-color: transparent;
 }
 
 .main-nav--closed .main-nav__toggle::before {
-  content: "";
   position: absolute;
   top: 23px;
   right: 31%;
@@ -22,13 +23,14 @@
   width: 24px;
   height: 2px;
 
+  content: "";
+
   background-color: @main-nav__toggle-color;
   box-shadow: 0 8px 0 0 @main-nav__toggle-color, 0 16px 0 0 @main-nav__toggle-color;
 }
 
 .main-nav--opened .main-nav__toggle::before,
 .main-nav--opened .main-nav__toggle::after {
-  content: "";
   position: absolute;
   top: 31px;
   right: 31%;
@@ -36,11 +38,14 @@
   width: 23px;
   height: 2px;
 
+  content: "";
+
   background-color: @main-nav__toggle-color;
 }
 
 .main-nav--opened .main-nav__toggle::before {
   transform: rotate(45deg);
+
   box-shadow: none;
 }
 
@@ -61,22 +66,25 @@
 }
 
 .main-nav__list {
-  text-align: center;
-
   .list-reset;
+
+  text-align: center;
 }
 
 .main-nav__link {
+  .link;
+
   display: block;
+
+  padding-top: 23px;
+  padding-bottom: 22px;
+
   color: @base-font-color;
+  border-bottom: 1px solid @border-color;
 
   font-weight: @bold-font-weight;
 
   .oswald(20px; 20px);
-  .link;
-  border-bottom: 1px solid @border-color;
-  padding-top: 23px;
-  padding-bottom: 22px;
 }
 
 @media (min-width: @tablet-width) {
@@ -107,22 +115,25 @@
 
   .main-nav__link {
     padding: 6px 0;
+
     border: none;
-    .oswald(18px; 25px);
+
     font-weight: @base-font-weight;
+
+    .oswald(18px; 25px);
 
     &--active {
       position: relative;
 
       &::after {
-        content: "";
-
         position: absolute;
         right: 0;
         bottom: -3px;
         left: 0;
 
         height: 2px;
+
+        content: "";
 
         background-color: @main-nav__link--active-color;
       }
@@ -150,8 +161,9 @@
   }
 
   .main-nav__link {
-    .oswald(20px; 25px);
     color: @contrast-font-color;
+
+    .oswald(20px; 25px);
 
     &--active::after {
       background-color: @main-nav__link--active-contrast-color;

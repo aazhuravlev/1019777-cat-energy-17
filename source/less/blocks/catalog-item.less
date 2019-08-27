@@ -1,9 +1,11 @@
 .catalog-item {
   .wrapper;
+
   width: 278px;
+  padding-bottom: 24px;
+
   border: solid 1px @border-color;
   border-top: none;
-  padding-bottom: 24px;
 
   &:first-child {
     border: solid 1px @border-color;
@@ -23,7 +25,6 @@
 }
 
 .catalog-item__title {
-  .oswald(16px; 20px);
   width: 51%;
   margin: 0;
   margin-top: 21px;
@@ -32,11 +33,14 @@
   text-transform: uppercase;
 
   font-weight: @base-font-weight;
+
+  .oswald(16px; 20px);
 }
 
 .catalog-item--more {
-  text-align: center;
   position: relative;
+
+  text-align: center;
 }
 
 .catalog-item__title--more {
@@ -45,8 +49,6 @@
   padding-top: 79px;
 
   &::before {
-    content: "";
-
     position: absolute;
     top: 26px;
     left: 45%;
@@ -54,10 +56,12 @@
     width: 10%;
     height: 31px;
 
-    background-image: url("../img/icon-plus-mobile.svg");
-    background-position: center;
-    background-repeat: no-repeat;
+    content: "";
+
     opacity: 0.2;
+    background-image: url("../img/icon-plus-mobile.svg");
+    background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -82,18 +86,20 @@
 
 @media (min-width: @tablet-width) {
   .catalog-item {
-    margin: 0;
-    padding: 0;
-    margin-right: 56px;
-    margin-top: 140px;
-    width: 46%;
     box-sizing: border-box;
+    width: 46%;
+    margin: 0;
+    margin-top: 140px;
+    margin-right: 56px;
+    padding: 0;
+
     border: none;
     background-color: @background-alt-color;
 
     &:first-child {
-      border: none;
       margin-top: 0;
+
+      border: none;
     }
 
     &:nth-child(2) {
@@ -101,8 +107,8 @@
     }
 
     &:last-child {
-      background-color: @background-color;
       border: 1px solid @border-color;
+      background-color: @background-color;
     }
 
     &:nth-child(2n+2) {
@@ -132,17 +138,19 @@
 
   .catalog-item__wrapper {
     width: 77%;
-    padding-left: 12%;
     padding-right: 11%;
+    padding-left: 12%;
   }
 
   .catalog-item__title {
-    .oswald(20px; 20px);
-    text-align: center;
     width: 130px;
     margin: 0 auto;
     margin-top: 37px;
     margin-bottom: 20px;
+
+    text-align: center;
+
+    .oswald(20px; 20px);
 
     &--more {
       width: 42%;
@@ -165,6 +173,7 @@
     margin: 0 auto;
     margin-top: 33px;
     margin-bottom: 40px;
+
     .oswald(16px; 20px);
 
     &--more {
@@ -176,8 +185,8 @@
 @media (min-width: @desktop-width) {
   .catalog-item {
     width: 245px;
-    margin-right: 80px;
     margin-top: 142px;
+    margin-right: 80px;
 
     &:nth-child(2n) {
       margin-right: 80px;
@@ -200,15 +209,16 @@
     width: 55%;
 
     &::before {
-      width: 26%;
       left: 90px;
+
+      width: 26%;
     }
   }
 
   .catalog-item__wrapper {
     width: 169px;
-    padding-left: 15%;
     padding-right: 16%;
+    padding-left: 15%;
   }
 
   .catalog-item__button {

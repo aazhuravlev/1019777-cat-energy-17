@@ -1,5 +1,6 @@
 .additional-information {
   position: relative;
+
   margin-bottom: 32px;
 }
 
@@ -10,6 +11,7 @@
 .additional-information__title {
   padding-right: 23px;
   padding-bottom: 35px;
+
   background-color: @background-color;
 }
 
@@ -18,8 +20,9 @@
 }
 
 .additional-information__item {
-  margin-bottom: 13px;
   position: relative;
+
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -28,32 +31,36 @@
 
 .additional-information__checkbox + .additional-information__label::before {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 16px;
-  content: "";
 
   width: 28px;
   height: 28px;
+  margin-right: 16px;
+
+  content: "";
+  vertical-align: middle;
+
   border: 1px solid @radio-box-color;
 }
 
 .additional-information__checkbox:checked + .additional-information__label::after {
   position: absolute;
-  content: "";
   top: 7px;
   left: 5px;
+
   width: 22px;
   height: 17px;
+
+  content: "";
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
 .additional-information__checkbox:focus + .additional-information__label {
+  outline-width: 5px;
+  outline-style: auto;
   outline-color: #4d90fe;
   outline-offset: -2px;
-  outline-style: auto;
-  outline-width: 5px;
 }
 
 .additional-information__checkbox:hover + .additional-information__label::before,
@@ -75,20 +82,22 @@
   }
 
   .additional-information__title {
-    padding-left: 5%;
-    padding-right: 6%;
     margin-bottom: 22px;
+    padding-right: 6%;
+    padding-left: 5%;
   }
 
   .additional-information__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     .wrapper-tablet-form;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .additional-information__item {
     display: block;
+
     width: 46%;
     margin-bottom: 32px;
   }
@@ -117,9 +126,9 @@
   }
 
   .additional-information__title {
-    padding-left: 3%;
-    padding-right: 3%;
     margin-bottom: 23px;
+    padding-right: 3%;
+    padding-left: 3%;
   }
 
   .additional-information__wrapper {

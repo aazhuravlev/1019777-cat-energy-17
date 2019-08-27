@@ -4,17 +4,19 @@
 
 .how-it-works__title {
   margin: 0;
-  padding: 0;
   margin-bottom: 30px;
+  padding: 0;
 }
 
 .how-it-works__list {
   .list-reset;
+
   margin: 0 0 40px;
 }
 
 .how-it-works__item {
   position: relative;
+
   margin-bottom: 20px;
 
   &:last-child {
@@ -23,16 +25,19 @@
 }
 
 .how-it-works__desc {
-  padding-left: 81px;
   min-height: 60px;
+  padding-left: 81px;
 
   &::after {
-    content: "";
     position: absolute;
     top: -2px;
     left: 0;
+
     width: 60px;
     height: 60px;
+
+    content: "";
+
     background-color: @background-elements;
     background-repeat: no-repeat;
     background-position: center center;
@@ -87,15 +92,17 @@
   .how-it-works__list {
     display: flex;
     flex-wrap: wrap;
+
     margin-bottom: 0;
+
     counter-reset: list1;
   }
 
   .how-it-works__item {
-    width: 45%;
     box-sizing: border-box;
-    margin-bottom: 89px;
+    width: 45%;
     margin-right: 65px;
+    margin-bottom: 89px;
 
     &:nth-child(2n+2) {
       margin-right: 0;
@@ -109,27 +116,32 @@
 
   .how-it-works__desc {
     padding: 0;
-    padding-right: 22%;
     padding-top: 112px;
+    padding-right: 22%;
     padding-bottom: 44px;
 
     &::after {
       top: 0;
+
       width: 80px;
       height: 80px;
     }
 
     &::before {
-      counter-increment: list1;
-      content: counter(list1) "";
       position: absolute;
+      z-index: -1;
       top: -39px;
       right: 89px;
-      .oswald(281px; 281px);
+
+      content: counter(list1) "";
+      counter-increment: list1;
+
+      color: @background-alt-color;
+
       font-family: @deafult-font;
       font-weight: @base-font-weight;
-      color: @background-alt-color;
-      z-index: -1;
+
+      .oswald(281px; 281px);
     }
 
     &--water::before {
@@ -148,14 +160,15 @@
 
 @media (min-width: @desktop-width) {
   .how-it-works__list {
-    margin-bottom: 65px;
     justify-content: space-between;
+
+    margin-bottom: 65px;
   }
 
   .how-it-works__item {
     width: 246px;
-    margin-bottom: 0;
     margin-right: 0;
+    margin-bottom: 0;
 
     &:nth-child(2n+2) {
       margin-right: 0;

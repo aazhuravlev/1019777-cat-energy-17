@@ -1,21 +1,25 @@
 .field-title {
+  overflow: hidden;
+
+  margin: 0;
   padding-top: 29px;
   padding-bottom: 34px;
-  margin: 0;
 
   font-weight: @base-font-weight;
-  overflow: hidden;
 
   .oswald(24px; 24px);
 
   &::before {
     position: absolute;
-    content: "";
     z-index: -1;
-    right: 0;
     top: 42px;
+    right: 0;
+
     width: 80%;
     height: 3px;
+
+    content: "";
+
     background-color: @background-elements;
   }
 }
@@ -26,6 +30,7 @@
 
     &::before {
       top: 50px;
+
       width: 100%;
     }
   }
