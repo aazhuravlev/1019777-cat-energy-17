@@ -4,16 +4,16 @@
 
 .selection__desc {
   margin: 0 auto;
-  width: 270px;
-  padding-left: 20px;
-  padding-right: 30px;
-  text-align: left;
   margin-bottom: 40px;
+  padding-right: 10%;
+  padding-left: 6%;
 
+  text-align: left;
   text-transform: uppercase;
-  font-weight: @base-font-weight;
 
   color: @base-font-color;
+
+  font-weight: @base-font-weight;
 
   .oswald(14px; 18px);
 }
@@ -34,11 +34,13 @@
 }
 
 .selection__value {
+  flex-grow: 1;
+
   padding: 12px 15px;
   padding-right: 12px;
   padding-bottom: 13px;
+
   border: 1px solid @input-color;
-  flex-grow: 1;
 
   &::placeholder {
     text-transform: uppercase;
@@ -53,12 +55,13 @@
   }
 
   &:focus {
-    border: 2px solid @input-color--focus;
     padding-top: 11px;
     padding-bottom: 12px;
     padding-left: 14px;
-    outline: none;
+
     opacity: 1;
+    border: 2px solid @input-color--focus;
+    outline: none;
   }
 
   &:focus ~ .contacts-information__icon {
@@ -82,9 +85,10 @@
 
 .selection__button {
   .wrapper;
+
+  margin-bottom: 20px;
   padding-top: 11px;
   padding-bottom: 11px;
-  margin-bottom: 20px;
 
   border: none;
 }
@@ -99,13 +103,14 @@
   }
 
   .selection__desc {
-    width: 323px;
+    width: 51%;
     margin: 0;
-    padding-left: 0;
-    padding-right: 0;
-    .oswald(20px; 30px);
     margin-top: 55px;
     margin-bottom: 66px;
+    padding-right: 0;
+    padding-left: 0;
+
+    .oswald(20px; 30px);
   }
 
   .selection__label {
@@ -129,24 +134,27 @@
 
   .selection__wrapper {
     .wrapper-tablet-form;
+
     display: flex;
   }
 
   .selection sup {
     top: -3px;
+
     margin-left: 2px;
   }
 
   .selection__button {
-    width: 283px;
+    width: 45%;
     margin: 0;
     padding: 16px 0;
   }
 
   .selection__required {
-    .arial(16px; 16px);
-    margin-left: 60px;
     margin-top: 16px;
+    margin-left: 60px;
+
+    .arial(16px; 16px);
   }
 }
 
@@ -156,19 +164,24 @@
   }
 
   .selection__desc {
+    width: 31%;
     margin-bottom: 67px;
   }
 
   .selection__container {
     .wrapper;
+
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 38px;
   }
 
   .selection__wrapper {
     .wrapper;
+
     display: flex;
+
     margin-bottom: 82px;
   }
 

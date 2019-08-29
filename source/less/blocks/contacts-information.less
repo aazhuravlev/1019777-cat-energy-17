@@ -3,18 +3,21 @@
 }
 
 .contacts-information__wrap {
-  .wrapper;
+  .wrapper-form-title;
 }
 
 .contacts-information__title {
-  width: 201px;
+  width: 202px;
+
   background-color: @background-color;
 }
 
 .contacts-information__item {
   position: relative;
-  margin-bottom: 14px;
+
   display: flex;
+
+  margin-bottom: 14px;
 
   &:last-child {
     margin-bottom: 0;
@@ -34,6 +37,7 @@
   position: absolute;
   top: 16px;
   right: 15px;
+
   fill: @contacts-information__icon-color;
 
   &--phone {
@@ -44,18 +48,14 @@
 
 @media (min-width: @tablet-width) {
   .contacts-information {
-    margin-bottom: 36px;
-  }
-
-  .contacts-information__wrap {
-    .wrapper;
+    margin-bottom: 37px;
   }
 
   .contacts-information__title {
-    width: auto;
-    padding-left: 40px;
-    padding-right: 40px;
-    margin-bottom: 42px;
+    width: 515px;
+    margin-bottom: 41px;
+    padding-right: 5%;
+    padding-left: 6%;
   }
 
   .contacts-information__wrapper {
@@ -73,11 +73,11 @@
 
   .contacts-information__icon {
     top: 20px;
-    right: 18px;
+    right: 23px;
 
     &--phone {
       top: 17px;
-      right: 16px;
+      right: 21px;
     }
   }
 }
@@ -87,13 +87,15 @@
     margin-bottom: 38px;
   }
 
-  .contacts-information__wrap {
-    width: 1300px;
-    padding: 0;
+  .contacts-information__title {
+    margin-bottom: 42px;
+    padding-right: 3%;
+    padding-left: 3%;
   }
 
   .contacts-information__wrapper {
     .wrapper;
+
     display: flex;
     flex-direction: row;
     justify-content: space-between;
@@ -106,5 +108,13 @@
 
   .contacts-information__label {
     padding-right: 18px;
+  }
+
+  .contacts-information__icon {
+    right: 19px;
+
+    &--phone {
+      right: 19px;
+    }
   }
 }

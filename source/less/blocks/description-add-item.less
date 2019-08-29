@@ -1,6 +1,7 @@
 .description-add-item {
   display: flex;
   justify-content: space-between;
+
   margin-bottom: 14px;
 
   color: @second-font-color;
@@ -14,21 +15,23 @@
 
 @media (min-width: @tablet-width) {
   .description-add-item {
-    .arial(16px; 20px);
     width: 229px;
-    margin-left: auto;
     margin-top: 29px;
+    margin-left: auto;
+
+    .arial(16px; 20px);
   }
 
   .description-add-item__field {
     width: 135px;
+
     text-align: right;
   }
 }
 
 @media (min-width: @desktop-width) {
   .description-add-item {
-    width: 287px;
+    width: 291px;
   }
 
   .description-add-item__field {
@@ -36,7 +39,8 @@
   }
 
   .description-add-item__value {
-    width: 44px;
+    width: 47px;
+
     text-align: left;
   }
 }

@@ -1,21 +1,25 @@
 .social {
+  display: flex;
+  justify-content: center;
+
   margin: 0;
   padding-left: 0;
 
   list-style: none;
-  display: flex;
-  justify-content: center;
+
   border-top: 1px solid @divine-border-color;
   border-bottom: 1px solid @divine-border-color;
 }
 
 .social__link {
   display: flex;
+  align-items: center;
+  justify-content: center;
+
+  box-sizing: border-box;
   width: 55px;
   height: 55px;
-  box-sizing: border-box;
-  justify-content: center;
-  align-items: center;
+
   fill: @svg-color;
 
   &:hover .social__icon,
@@ -24,8 +28,9 @@
   }
 
   &:active .social__icon {
-    fill: @icon-color--reaction;
     opacity: 0.3;
+
+    fill: @icon-color--reaction;
   }
 }
 

@@ -8,27 +8,31 @@
 
 .additional-catalog__title {
   width: 247px;
+
   background-color: @background-color;
 }
 
 .additional-catalog__list {
   .list-reset;
+
   margin-bottom: 40px;
 }
 
 .additional-catalog__wrapper {
   position: relative;
+
+  margin-bottom: 34px;
   padding: 0;
   padding-bottom: 42px;
-  margin-bottom: 34px;
 
   background-color: @background-elements;
   background-image: url("../img/gift-photo-mobile@1x.jpg");
   background-repeat: no-repeat;
+  background-position: center;
 }
 
 .additional-catalog__condition {
-  width: 161px;
+  width: 57%;
   margin: 0 auto;
   padding-top: 187px;
 
@@ -39,17 +43,18 @@
   .arial(16px; 20px);
 
   &::before {
-    content: "";
-
     position: absolute;
     top: 65px;
-    left: 113px;
+    left: 40%;
 
-    width: 56px;
+    width: 20%;
     height: 61px;
+
+    content: "";
 
     background-image: url("../img/icon-gift.svg");
     background-repeat: no-repeat;
+    background-position: center;
   }
 }
 
@@ -66,45 +71,50 @@
 
   .additional-catalog__container {
     display: flex;
-    width: 633px;
     flex-direction: row;
+
+    width: 100%;
   }
 
   .additional-catalog__wrapper {
+    min-height: 159px;
     margin-bottom: 75px;
 
     background-image: url("../img/gift-photo-tablet@1x.jpg");
 
     @media (min-resolution: @retina-dpi), (min-resolution: @retina-dppx) {
       background-image: url("../img/gift-photo-tablet@2x.jpg");
-      background-size: 708px auto;
+      background-size: 100% auto;
     }
   }
 
   .additional-catalog__condition {
-    .arial(16px; 20px);
-    padding-top: 72px;
-    margin-left: 424px;
+    width: 26%;
     margin-bottom: 26px;
+    margin-left: 60%;
+    padding-top: 72px;
+
     text-align: left;
-    width: 165px;
+
+    .arial(16px; 20px);
 
     &::before {
-      left: 90px;
+      left: 7%;
     }
   }
 }
 
 @media (min-width: @desktop-width) {
   .additional-catalog__wrap:first-child {
-    padding: 0;
-    margin-bottom: 46px;
     width: 1300px;
+    margin-bottom: 46px;
+    padding: 0;
   }
 
   .additional-catalog__wrap {
     display: flex;
     justify-content: space-between;
+
     margin-bottom: 87px;
   }
 
@@ -115,11 +125,12 @@
 
   .additional-catalog__title {
     padding-left: 39px;
+
     background-color: @background-color;
   }
 
   .additional-catalog__container {
-    width: 613px;
+    width: 616px;
   }
 
   .additional-catalog__wrapper {
@@ -137,12 +148,13 @@
   .additional-catalog__condition {
     width: 180px;
     margin: 0 auto;
-    padding-top: 187px;
     margin-bottom: 0;
+    padding-top: 187px;
 
     text-align: center;
 
     &::before {
+      width: 23%;
       left: 96px;
     }
   }

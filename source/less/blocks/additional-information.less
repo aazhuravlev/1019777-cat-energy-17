@@ -1,15 +1,18 @@
 .additional-information {
   position: relative;
+
   margin-bottom: 32px;
 }
 
 .additional-information__wrap {
-  .wrapper;
+  .wrapper-form-title;
 }
 
 .additional-information__title {
+  width: 142px;
   padding-right: 23px;
   padding-bottom: 35px;
+
   background-color: @background-color;
 }
 
@@ -18,8 +21,9 @@
 }
 
 .additional-information__item {
-  margin-bottom: 13px;
   position: relative;
+
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -28,32 +32,36 @@
 
 .additional-information__checkbox + .additional-information__label::before {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 16px;
-  content: "";
 
   width: 28px;
   height: 28px;
+  margin-right: 16px;
+
+  content: "";
+  vertical-align: middle;
+
   border: 1px solid @radio-box-color;
 }
 
 .additional-information__checkbox:checked + .additional-information__label::after {
   position: absolute;
-  content: "";
   top: 7px;
   left: 5px;
+
   width: 22px;
   height: 17px;
+
+  content: "";
 
   background-image: url("../img/icon-tick.svg");
   background-repeat: no-repeat;
 }
 
 .additional-information__checkbox:focus + .additional-information__label {
+  outline-width: 5px;
+  outline-style: auto;
   outline-color: #4d90fe;
   outline-offset: -2px;
-  outline-style: auto;
-  outline-width: 5px;
 }
 
 .additional-information__checkbox:hover + .additional-information__label::before,
@@ -70,27 +78,25 @@
     margin-bottom: 21px;
   }
 
-  .additional-information__wrap {
-    .wrapper;
-  }
-
   .additional-information__title {
-    padding-left: 40px;
-    padding-right: 41px;
+    width: 214px;
     margin-bottom: 22px;
+    padding-right: 6%;
+    padding-left: 5%;
   }
 
   .additional-information__wrapper {
-    display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
     .wrapper-tablet-form;
-    padding: 0 40px 0 45px;
+
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
   }
 
   .additional-information__item {
     display: block;
-    width: 286px;
+
+    width: 46%;
     margin-bottom: 32px;
   }
 
@@ -112,13 +118,10 @@
     margin-bottom: 28px;
   }
 
-  .additional-information__wrap {
-    width: 1300px;
-    padding: 0;
-  }
-
   .additional-information__title {
     margin-bottom: 23px;
+    padding-right: 3%;
+    padding-left: 3%;
   }
 
   .additional-information__wrapper {

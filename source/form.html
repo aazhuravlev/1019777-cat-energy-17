@@ -6,15 +6,14 @@
     <title>Подбор программы Кэт энерджи</title>
     <link href="css/style.min.css" rel="stylesheet">
     <script src="js/picturefill.min.js"></script>
+    <link rel="preload" href="fonts/oswaldregular.woff2" as="font" crossorigin="anonymous">
+    <link rel="preload" href="fonts/oswaldmedium.woff2" as="font" crossorigin="anonymous">
   </head>
   <body>
-
     <div style="display:none">
       <include src="build/img/sprite.svg"></include>
     </div>
-
     <header class="page-header page-header--inner-page">
-
       <a href="index.html" class="page-header__logo">
         <picture>
           <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
@@ -30,20 +29,14 @@
           <li class="main-nav__item"><a class="main-nav__link main-nav__link--active">Подбор программы</a></li>
         </ul>
       </nav>
-
     </header>
-
     <main class="page-main">
-
       <h1 class="section-title section-title--form">Подбор программы</h1>
-
       <section class="selection">
         <div class="selection__wrap">
           <p class="selection__desc">Заполните анкету и мы подберем программу питания для вашего кота</p>
         </div>
-
         <form action="https://echo.htmlacademy.ru" method="post">
-
           <div class="selection__container">
             <fieldset class="selection__area main-information">
               <legend class="visually-hidden">Данные Вашего кота:</legend>
@@ -60,10 +53,9 @@
                 <input type="number" name="age" id="age" class="main-information__value selection__value" placeholder="7">
               </div>
             </fieldset>
-
             <fieldset class="selection__area program-information">
+              <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
               <div class="program-information__wrapper">
-                <legend class="visually-hidden">Какую программу вы хотите выбрать?</legend>
                 <div class="program-information__item">
                   <input type="radio" name="type-of-program" value="weight-loss" id="weight-loss" class="visually-hidden program-information__radio" checked="">
                   <label for="weight-loss" class="program-information__label selection__label">Похудение</label>
@@ -79,11 +71,10 @@
               </div>
             </fieldset>
           </div>
-
           <fieldset class="selection__area contacts-information">
-            <div class="contacts-information__wrap">
-              <legend class="contacts-information__title field-title">Контактные данные (владельца кота)</legend>
-            </div>
+            <legend class="contacts-information__wrap">
+              <span class="contacts-information__title field-title">Контактные данные (владельца кота)</span>
+            </legend>
             <div class="contacts-information__wrapper">
               <div class="contacts-information__item">
                 <label for="email" class="contacts-information__label selection__label">E-mail:<sup>*</sup></label>
@@ -101,18 +92,16 @@
               </div>
             </div>
           </fieldset>
-
           <fieldset class="selection__area comments-information">
-            <div class="comments-information__wrap">
-              <legend class="comments-information__title field-title">Комментарий</legend>
-            </div>
-            <textarea type="text" name="comments" class="comments-information__value selection__value" placeholder="Расскажите обо всех повадках кота"></textarea>
+            <legend class="comments-information__wrap">
+              <span class="comments-information__title field-title">Комментарий</span>
+            </legend>
+            <textarea name="comments" class="comments-information__value selection__value" placeholder="Расскажите обо всех повадках кота"></textarea>
           </fieldset>
-
           <fieldset class="selection__area additional-information">
-            <div class="additional-information__wrap">
-              <legend class="additional-information__title field-title">Дополнительно</legend>
-            </div>
+            <legend class="additional-information__wrap">
+              <span class="additional-information__title field-title">Дополнительно</span>
+            </legend>
             <div class="additional-information__wrapper">
               <div class="additional-information__item">
                 <input type="checkbox" name="additional-information" value="sweetener" id="sweetener" class="visually-hidden additional-information__checkbox" checked="">
@@ -131,20 +120,15 @@
                 <label for="vitamins" class="additional-information__label selection__label">Витамины</label>
               </div>
             </div>
-
           </fieldset>
-
           <div class="selection__wrapper">
             <button type="submit" class="selection__button button">Отправить заявку</button>
             <p class="selection__required"><sup>*</sup> — Обязательные поля</p>
           </div>
         </form>
       </section>
-
     </main>
-
     <footer class="page-footer">
-
       <div class="page-footer__container page-footer__container--inner-page">
         <div class="cooperation">
           <b class="cooperation__invite">
@@ -163,9 +147,7 @@
           </p>
         </div>
       </div>
-
       <iframe class="page-footer__map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1409.143984323421!2d30.32164700778888!3d59.93884468236727!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4696310fca145cc1%3A0x42b32648d8238007!2z0JHQvtC70YzRiNCw0Y8g0JrQvtC90Y7RiNC10L3QvdCw0Y8g0YPQuy4sIDE5LzgsINCh0LDQvdC60YIt0J_QtdGC0LXRgNCx0YPRgNCzLCAxOTExODY!5e0!3m2!1sru!2sru!4v1563207187225!5m2!1sru!2sru"></iframe>
-
       <div class="page-footer__wrapper">
         <a href="index.html" class="page-footer__logo">
           <img src="img/logo-footer.svg" width="128" height="24" alt="Логотип Кэт Энерджи">
@@ -198,15 +180,12 @@
         </ul>
         <a href="https://htmlacademy.ru/intensive/adaptive" class="page-footer__copyright copyright">
           <p class="copyright__name">HTML Academy</p>
-          <svg class="copyright__icon" width="34" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 8 50 55">
+          <svg class="copyright__icon" width="34" height="45" xmlns="http://www.w3.org/2000/svg" viewBox="0 8 50 57">
             <use xlink:href="#sprite-icon-htmlacademy"></use>
           </svg>
         </a>
       </div>
-
     </footer>
-
-    <script src="js/script.js"></script>
-
+    <script src="js/script.min.js"></script>
   </body>
 </html>

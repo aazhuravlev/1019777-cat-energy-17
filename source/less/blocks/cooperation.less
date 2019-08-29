@@ -1,20 +1,26 @@
 .cooperation {
   .wrapper;
+
   display: flex;
   justify-content: space-between;
-  padding-bottom: 25px;
+
   padding-top: 28px;
+  padding-bottom: 25px;
 }
 
 .cooperation__invite {
-  width: 125px;
+  width: 45%;
+
   text-transform: uppercase;
 
   font-weight: @base-font-weight;
 }
 
 .cooperation__adress {
-  width: 135px;
+  display: flex;
+  flex-direction: column;
+
+  width: 48%;
   margin: 0;
   margin-right: 4px;
 
@@ -27,40 +33,47 @@
   .cooperation {
     display: flex;
     justify-content: space-between;
+
     padding-top: 63px;
     padding-bottom: 58px;
   }
 
   .cooperation__invite {
-    width: 155px;
-    .oswald(20px; 25px);
+    width: 33%;
     margin-top: 2px;
     margin-left: 41px;
+
+    .oswald(20px; 25px);
   }
 
   .cooperation__adress {
-    .arial(16px; 20px);
-    text-align: right;
-    width: 155px;
+    width: 28%;
     margin-right: 42px;
+
+    text-align: right;
+
+    .arial(16px; 20px);
   }
 
   .cooperation__street {
     display: block;
+
     margin-bottom: 20px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .cooperation {
-    width: 570px;
+    position: absolute;
+    top: 102px;
+    left: 0;
+
     box-sizing: border-box;
+    width: 570px;
     margin: 0;
     padding-top: 56px;
     padding-bottom: 58px;
-    position: absolute;
-    left: 0;
-    top: 102px;
+
     background-color: @background-color;
   }
 
@@ -69,7 +82,9 @@
   }
 
   .cooperation__adress {
-    text-align: left;
+    width: 32%;
     margin-right: 49px;
+
+    text-align: left;
   }
 }

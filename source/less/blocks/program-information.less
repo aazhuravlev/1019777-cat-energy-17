@@ -10,8 +10,9 @@
 }
 
 .program-information__item {
-  margin-bottom: 13px;
   position: relative;
+
+  margin-bottom: 13px;
 
   &:last-child {
     margin-bottom: 0;
@@ -20,23 +21,28 @@
 
 .program-information__radio + .program-information__label::before {
   display: inline-block;
-  vertical-align: middle;
-  margin-right: 16px;
-  content: "";
 
   width: 28px;
   height: 28px;
-  border-radius: 50%;
+  margin-right: 16px;
+
+  content: "";
+  vertical-align: middle;
+
   border: 1px solid @radio-box-color;
+  border-radius: 50%;
 }
 
 .program-information__radio:checked + .program-information__label::after {
   position: absolute;
-  content: "";
   top: 9px;
   left: 9px;
+
   width: 12px;
   height: 12px;
+
+  content: "";
+
   border-radius: 50%;
   background-color: @background-elements;
 }
@@ -56,10 +62,11 @@
 @media (min-width: @tablet-width) {
   .program-information {
     .wrapper-tablet-form;
+
     box-sizing: border-box;
+    margin-bottom: 47px;
     padding: 24px 0;
     padding-left: 30px;
-    margin-bottom: 47px;
   }
 
   .program-information__wrapper {
@@ -79,20 +86,21 @@
   }
 
   .program-information__radio:checked + .program-information__label::after {
-    width: 18px;
-    height: 18px;
     top: 11px;
     left: 11px;
+
+    width: 18px;
+    height: 18px;
   }
 }
 
 @media (min-width: @desktop-width) {
   .program-information {
-    width: 570px;
     box-sizing: border-box;
+    width: 570px;
     margin: 0;
-    padding-left: 27px;
     padding-top: 26px;
     padding-bottom: 23px;
+    padding-left: 27px;
   }
 }
